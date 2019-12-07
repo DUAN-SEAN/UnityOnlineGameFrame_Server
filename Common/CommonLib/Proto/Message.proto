@@ -1,0 +1,196 @@
+syntax = "proto3";
+package Crazy.Common;
+
+message ChatOneMessage // IMessage
+{
+	int32 RpcId = 90;
+	string message = 1;
+}
+// 与匹配系统相关的消息写在这
+message C2S_CreateMatchTeam // IMessage
+{
+	int32 RpcId = 90;
+	string PlayerId = 1;
+}
+
+message S2C_CreateMatchTeamComplete // IMessage
+{
+	int32 RpcId = 90;
+	uint64 MatchTeamId = 1;
+	State state = 2;
+	enum State {
+		Complete = 0;
+		SystemError = 1;
+		HaveTeam  = 2;
+	}	
+}
+message C2S_InvitePlayerMatchTeam // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	string AimPlayerId = 2;
+	uint64 MatchTeamId = 3;
+}
+message S2C_InvitePlayerMatchTeam // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 MatchTeamId = 2;
+}
+message C2S_JoinMatchTeam // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 MatchTeamId = 2;
+}
+message S2CM_JoinMatchTeamComplete // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 MatchTeamId = 2;
+	State state = 3;
+	enum State {
+		Complete = 0;
+		SystemError = 1;
+		HaveTeam = 2;
+	}
+}
+message C2S_GetMatchTeamInfo // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 MatchTeamId = 2;
+}
+message S2C_UpdateMatchTeamInfo // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 MatchTeamId = 2;
+	MatchTeamInfo TeamInfo = 3;
+}
+message MatchTeamInfo
+{
+	uint64 MatchTeamId = 1;
+	repeated string PlayerIds = 2;
+}
+message C2S_ExitMatchTeam  // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 MatchTeamId = 2;
+}
+message S2CM_ExitMatchTeamComplete  // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 MatchTeamId = 2;
+	State state = 3;
+	enum State {
+		OK = 0;
+		Fail = 1;
+	}
+}
+message C2S_JoinMatchQueue  // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 MatchTeamId = 2;
+	int32 BarrierId = 3;
+}
+message S2CM_JoinMatchQueueComplete  // IMessage
+{
+	int32 RpcId = 90;
+	uint64 MatchTeamId = 1;
+	int32 BarrierId = 2;
+	State state = 3;
+	enum State {
+		Ok = 0;
+		Fail = 1;
+	}
+}
+message C2S_ExitMatchQueue  // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 MatchTeamId = 2;
+}
+message S2CM_ExitMatchQueue  // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 MatchTeamId = 2;
+	State state = 3;
+	enum State {
+		Client = 0;
+		Server = 1;
+	}	
+}
+message S2CM_MatchingFinish // IMessage
+{
+	int32 RpcId = 90;
+	uint64 MatchTeamId = 1;
+	int32 BarrierId = 2;
+	State state = 3;
+	enum State {
+		Ok = 0;
+		Fail = 1;
+	}
+}
+// 与战斗系统相关的消息写在下面
+message S2CM_CreateBattleBarrier // IMessage
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	CreateBattleBarrierInfo BattleInfo = 2;
+	message CreateBattleBarrierInfo
+	{
+		uint64 BattleId = 1;
+		repeated string PlayerIds = 2;
+	}
+}
+
+//以下为其他通信消息
+message C2S_ReConnectByLogin  // IMessage
+{
+	int32 RpcId = 90;
+	string Account = 1;
+	string Password = 2;
+}
+
+//以下为其他通信消息
+message C2S_SpeakToTeamReq  // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	repeated string PlayerIds = 2;
+	uint64 MatchTeamId = 3;
+	bytes Data = 4;
+}
+
+//以下为其他通信消息
+message S2C_SpeakToTeamAck  // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 MatchTeamId = 2;
+	bytes Data = 3;
+}
+
+//以下为其他通信消息
+message C2S_SpeakToBattleReq  // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	repeated string PlayerIds = 2;
+	uint64 BattleId = 3;
+	bytes Data = 4;
+}
+
+//以下为其他通信消息
+message S2C_SpeakToBattleAck  // IMessage
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+	uint64 BattleId = 2;
+	bytes Data = 3;
+}

@@ -1,0 +1,125 @@
+syntax = "proto3";
+package Crazy.Common;
+
+////验证登陆消息
+message C2S_LoginMessage // IRequest
+{
+	int32 RpcId = 90;
+	string account = 1;
+	string password = 2;
+}
+
+message S2C_LoginMessage // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+
+	string playerGameId = 1;
+	State state = 2;
+	enum State {
+		Fail = 0;
+		OK = 1;
+	}	
+}
+
+message C2S_RegisterMessage // IRequest
+{
+	int32 RpcId = 90;
+	string account = 1;
+	string password = 2;
+}
+
+message S2C_RegisterMessage // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+
+	State state = 2;
+	enum State {
+		Fail = 0;
+		OK = 1;
+	}	
+}
+
+//大厅
+message C2S_UpdateOnlinePlayerList // IRequest
+{
+	int32 RpcId = 90;
+	string LaunchPlayerId = 1;
+}
+message S2C_UpdateOnlinePlayerList // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	repeated OnlinePlayerInfo OnlinePlayers = 1;
+	message OnlinePlayerInfo
+	{
+		string PlayerId = 1;
+		int32 State = 2;
+	}
+}
+
+
+//获取飞船列表
+message C2S_ShipInfoReq // IRequest
+{
+	int32 RpcId = 90;
+	string PlayerId = 1;
+}
+
+//获取飞船列表
+message S2C_ShipInfoAck // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int32 ShipId = 1;
+	int32 ShipType = 2;
+	string ShipName = 3;
+	int32 WeaponA = 4;
+	int32 WeaponB = 5;
+}
+
+//上传飞船配置请求
+message C2S_UpLoadShipInfoReq // IRequest
+{
+	int32 RpcId = 90;
+	string PlayerId = 1;
+	int32 ShipId = 2;
+	int32 ShipType = 3;
+	string ShipName = 4;
+	int32 WeaponA = 5;
+	int32 WeaponB = 6;
+}
+
+//上传飞船配置响应
+message S2C_UpLoadShipInfoAck // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string PlayerId = 1;
+	State state = 2;
+	enum State {
+		Fail = 0;
+		OK = 1;
+	}
+}
+
+//获取飞船列表
+message C2S_DelayReq // IRequest
+{
+	int32 RpcId = 90;
+}
+
+//获取飞船列表
+message S2C_DelayAck // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 Time = 1;
+}

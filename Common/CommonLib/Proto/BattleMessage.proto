@@ -1,0 +1,135 @@
+syntax = "proto3";
+package Crazy.Common;
+// 与战斗系统相关的消息写在下面
+message C2S_ReadyBattleBarrierReq // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	string PlayerId = 2;
+}
+// 与战斗系统相关的消息写在下面
+message S2CM_ReadyBattleBarrierAck // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+}
+// 战斗指令
+message C2S_BattleCommandMessage // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	string Message = 2;
+}
+//物体生成消息
+message S2C_BodyInitBattleMessage // IBattleMessage
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	string PlayerId = 2;
+	string BodyType = 3;
+	bytes Body = 4;
+}
+//以下是正常的逻辑
+//指令生成消息
+message C2S_CommandBattleMessage // IBattleMessage
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+    bytes Command = 2;
+}
+message S2C_EventBattleMessage // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	bytes Event = 2;
+}
+
+message S2C_SyncHpShieldStateBattleMessage // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	uint64 ActorId = 2;
+	int32 ActorType = 3;
+	int32 Hp = 4;
+	int32 Shield = 5;
+	
+
+}
+message S2C_SyncPhysicsStateBattleMessage // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	uint64 ActorId = 2;
+	int32 ActorType = 3;
+	float Position_X = 4;
+	float Position_Y = 5;
+	float ForwardAngle = 6;
+	float Velocity_X = 7;
+	float Velocity_Y = 8;
+	float AngleVelocity = 9;
+	float Force_X = 10;
+	float Force_Y = 11;
+	float Torque = 12;
+	float PositionPrevX = 13;
+	float PositionPrevY = 14;
+}
+message S2C_SyncLevelTaskBattleMessage // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	uint64 ActorId = 2;
+	repeated TaskState Tasks = 3;
+	message TaskState
+	{
+		int32 Id = 1;
+		int32 State = 2;
+		map<int32,int32> Conditions = 3;
+	}
+}
+message S2C_SyncSkillStateBattleMessage // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	uint64 ActorId = 2;
+	repeated SkillState Skills = 3;
+	message SkillState
+	{
+		uint64 ActorId = 1;
+		int32 Count = 2;
+		int32 CD = 3;
+		int32 SkillType = 4;
+	}
+
+}
+message S2C_SyncLevelStateBattleMessage // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	uint64 ActorId = 2;
+	int64 Frame = 3;
+	int64 IntervalTime = 4;
+	int64 Time = 5;
+}
+message C2S_ExitBattleMessage // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	string PlayerId = 2;
+}
+message S2C_ExitBattleMessage // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	string PlayerId = 2;
+	State state = 3;
+	enum State {
+		Fail = 0;
+		OK = 1;
+	}	
+}
+message S2CM_FinishBattleMessage // IBattleMessage 
+{
+	int32 RpcId = 90;
+	uint64 BattleId = 1;
+	bytes Result = 2;
+}
