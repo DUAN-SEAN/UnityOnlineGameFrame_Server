@@ -12,7 +12,7 @@ namespace TankOLGameServer
     {
         static void Main(string[] args)
         {
-            TankGameServer gameServer = new TankGameServer();
+            GameServer gameServer = new GameServer();
             if (!gameServer.Initialize<TankGameServerGlobalConfig, TankGameServerPlayerContext>
                 (@"GameServerConfig.config", typeof(GameServerPlayerContext), new ProtobufPacker(), "TankGameServer"))
             {

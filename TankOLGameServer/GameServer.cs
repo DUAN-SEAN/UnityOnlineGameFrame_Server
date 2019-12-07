@@ -10,30 +10,30 @@ using Crazy.ServerBase;
 
 namespace TankOLGameServer
 {
-    class TankGameServer:ServerBase
+    class GameServer:ServerBase
     {
-        public TankGameServer() : base()
+        public GameServer() : base()
         {
             m_instance = this;
         }
         /// <summary>
         /// 静态实例
         /// </summary>
-        public new static TankGameServer Instance => (TankGameServer)(ServerBase.Instance);
+        public new static GameServer Instance => (GameServer)(ServerBase.Instance);
 
         public override bool Initialize<GlobalConfigureType, PlayerContextBase>(string globalPath, Type plyaerContextType, IMessagePacker messagePraser, string serverName)
         {
             //初始化程序集
             TypeManager.Instance.Add(DLLType.Common, Assembly.GetAssembly(typeof(TypeManager)));
             TypeManager.Instance.Add(DLLType.ServerBase, Assembly.GetAssembly(typeof(ServerBase)));
-            TypeManager.Instance.Add(DLLType.GameServer, Assembly.GetAssembly(typeof(TankGameServer)));
+            TypeManager.Instance.Add(DLLType.GameServer, Assembly.GetAssembly(typeof(GameServer)));
 
             if (!base.Initialize<GlobalConfigureType, PlayerContextBase>(globalPath, plyaerContextType, messagePraser, serverName))
             {
                 return false;
             }
             //获取当前服务器的配置文件
-            m_gameServerGlobalConfig = base.m_globalConfigure as GameServer.Configure.TankGameServerGlobalConfig;
+            m_gameServerGlobalConfig = base.m_globalConfigure as global::GameServer.Configure.TankGameServerGlobalConfig;
 
             //数据库配置
             var dbConfig = m_gameServerGlobalConfig.DBConfigInfos[0];
@@ -108,7 +108,7 @@ namespace TankOLGameServer
         /// <summary>
         /// 获取当前服务器特定配置数据
         /// </summary>
-        public GameServer.Configure.TankGameServerGlobalConfig m_gameServerGlobalConfig { get; private set; }
+        public global::GameServer.Configure.TankGameServerGlobalConfig m_gameServerGlobalConfig { get; private set; }
         /// <summary>
         /// 服务器用于顺序化AsyncAction的队列池，根据每个Context的UserId来分配该Context对应的AsyncAction所属的队列
         /// </summary>
