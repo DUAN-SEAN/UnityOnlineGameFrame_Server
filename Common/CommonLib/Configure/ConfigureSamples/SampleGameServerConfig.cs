@@ -10,7 +10,7 @@ namespace GameServer.Configure
 {
     [Serializable]
     [XmlRoot("Configure")]
-    public class TankGameServerGlobalConfig : ServerBaseGlobalConfigure
+    public class SampleGameServerGlobalConfig : ServerBaseGlobalConfigure
     {
 
         /// <summary>

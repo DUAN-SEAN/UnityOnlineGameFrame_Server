@@ -485,7 +485,7 @@ namespace Crazy.Common {
             break;
           }
           case 16: {
-            State = (global::Crazy.Common.S2C_LoginMessage.Types.State) input.ReadEnum();
+            state_ = (global::Crazy.Common.S2C_LoginMessage.Types.State) input.ReadEnum();
             break;
           }
           case 720: {
@@ -895,7 +895,7 @@ namespace Crazy.Common {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 16: {
-            State = (global::Crazy.Common.S2C_RegisterMessage.Types.State) input.ReadEnum();
+            state_ = (global::Crazy.Common.S2C_RegisterMessage.Types.State) input.ReadEnum();
             break;
           }
           case 720: {
@@ -2468,7 +2468,7 @@ namespace Crazy.Common {
             break;
           }
           case 16: {
-            State = (global::Crazy.Common.S2C_UpLoadShipInfoAck.Types.State) input.ReadEnum();
+            state_ = (global::Crazy.Common.S2C_UpLoadShipInfoAck.Types.State) input.ReadEnum();
             break;
           }
           case 720: {

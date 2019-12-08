@@ -1,0 +1,10 @@
+syntax = "proto3";
+package Crazy.Common;
+
+////验证登陆消息
+message C2S_TestMessage // IMessage
+{
+	int32 RpcId = 90;
+	string Data = 1;
+}
+

@@ -59,21 +59,21 @@ namespace Crazy.Common
 {
 	public static partial class BattleMessageOpcode
 	{
-		 public const ushort C2S_ReadyBattleBarrierReq = 1002;
-		 public const ushort S2CM_ReadyBattleBarrierAck = 1003;
-		 public const ushort C2S_BattleCommandMessage = 1004;
-		 public const ushort S2C_BodyInitBattleMessage = 1005;
-		 public const ushort C2S_CommandBattleMessage = 1006;
-		 public const ushort S2C_EventBattleMessage = 1007;
-		 public const ushort S2C_SyncHpShieldStateBattleMessage = 1008;
-		 public const ushort S2C_SyncPhysicsStateBattleMessage = 1009;
-		 public const ushort S2C_SyncLevelTaskBattleMessage = 1010;
-		 public const ushort TaskState = 1011;
-		 public const ushort S2C_SyncSkillStateBattleMessage = 1012;
-		 public const ushort SkillState = 1013;
-		 public const ushort S2C_SyncLevelStateBattleMessage = 1014;
-		 public const ushort C2S_ExitBattleMessage = 1015;
-		 public const ushort S2C_ExitBattleMessage = 1016;
-		 public const ushort S2CM_FinishBattleMessage = 1017;
+		 public const ushort C2S_ReadyBattleBarrierReq = 1001;
+		 public const ushort S2CM_ReadyBattleBarrierAck = 1002;
+		 public const ushort C2S_BattleCommandMessage = 1003;
+		 public const ushort S2C_BodyInitBattleMessage = 1004;
+		 public const ushort C2S_CommandBattleMessage = 1005;
+		 public const ushort S2C_EventBattleMessage = 1006;
+		 public const ushort S2C_SyncHpShieldStateBattleMessage = 1007;
+		 public const ushort S2C_SyncPhysicsStateBattleMessage = 1008;
+		 public const ushort S2C_SyncLevelTaskBattleMessage = 1009;
+		 public const ushort TaskState = 1010;
+		 public const ushort S2C_SyncSkillStateBattleMessage = 1011;
+		 public const ushort SkillState = 1012;
+		 public const ushort S2C_SyncLevelStateBattleMessage = 1013;
+		 public const ushort C2S_ExitBattleMessage = 1014;
+		 public const ushort S2C_ExitBattleMessage = 1015;
+		 public const ushort S2CM_FinishBattleMessage = 1016;
 	}
 }

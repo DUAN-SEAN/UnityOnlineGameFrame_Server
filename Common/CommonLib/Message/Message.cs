@@ -607,7 +607,7 @@ namespace Crazy.Common {
             break;
           }
           case 16: {
-            State = (global::Crazy.Common.S2C_CreateMatchTeamComplete.Types.State) input.ReadEnum();
+            state_ = (global::Crazy.Common.S2C_CreateMatchTeamComplete.Types.State) input.ReadEnum();
             break;
           }
           case 720: {
@@ -1416,7 +1416,7 @@ namespace Crazy.Common {
             break;
           }
           case 24: {
-            State = (global::Crazy.Common.S2CM_JoinMatchTeamComplete.Types.State) input.ReadEnum();
+            state_ = (global::Crazy.Common.S2CM_JoinMatchTeamComplete.Types.State) input.ReadEnum();
             break;
           }
           case 720: {
@@ -1806,7 +1806,7 @@ namespace Crazy.Common {
       }
       if (other.teamInfo_ != null) {
         if (teamInfo_ == null) {
-          TeamInfo = new global::Crazy.Common.MatchTeamInfo();
+          teamInfo_ = new global::Crazy.Common.MatchTeamInfo();
         }
         TeamInfo.MergeFrom(other.TeamInfo);
       }
@@ -1831,9 +1831,9 @@ namespace Crazy.Common {
           }
           case 26: {
             if (teamInfo_ == null) {
-              TeamInfo = new global::Crazy.Common.MatchTeamInfo();
+              teamInfo_ = new global::Crazy.Common.MatchTeamInfo();
             }
-            input.ReadMessage(TeamInfo);
+            input.ReadMessage(teamInfo_);
             break;
           }
           case 720: {
@@ -2380,7 +2380,7 @@ namespace Crazy.Common {
             break;
           }
           case 24: {
-            State = (global::Crazy.Common.S2CM_ExitMatchTeamComplete.Types.State) input.ReadEnum();
+            state_ = (global::Crazy.Common.S2CM_ExitMatchTeamComplete.Types.State) input.ReadEnum();
             break;
           }
           case 720: {
@@ -2818,7 +2818,7 @@ namespace Crazy.Common {
             break;
           }
           case 24: {
-            State = (global::Crazy.Common.S2CM_JoinMatchQueueComplete.Types.State) input.ReadEnum();
+            state_ = (global::Crazy.Common.S2CM_JoinMatchQueueComplete.Types.State) input.ReadEnum();
             break;
           }
           case 720: {
@@ -3228,7 +3228,7 @@ namespace Crazy.Common {
             break;
           }
           case 24: {
-            State = (global::Crazy.Common.S2CM_ExitMatchQueue.Types.State) input.ReadEnum();
+            state_ = (global::Crazy.Common.S2CM_ExitMatchQueue.Types.State) input.ReadEnum();
             break;
           }
           case 720: {
@@ -3453,7 +3453,7 @@ namespace Crazy.Common {
             break;
           }
           case 24: {
-            State = (global::Crazy.Common.S2CM_MatchingFinish.Types.State) input.ReadEnum();
+            state_ = (global::Crazy.Common.S2CM_MatchingFinish.Types.State) input.ReadEnum();
             break;
           }
           case 720: {
@@ -3636,7 +3636,7 @@ namespace Crazy.Common {
       }
       if (other.battleInfo_ != null) {
         if (battleInfo_ == null) {
-          BattleInfo = new global::Crazy.Common.S2CM_CreateBattleBarrier.Types.CreateBattleBarrierInfo();
+          battleInfo_ = new global::Crazy.Common.S2CM_CreateBattleBarrier.Types.CreateBattleBarrierInfo();
         }
         BattleInfo.MergeFrom(other.BattleInfo);
       }
@@ -3657,9 +3657,9 @@ namespace Crazy.Common {
           }
           case 18: {
             if (battleInfo_ == null) {
-              BattleInfo = new global::Crazy.Common.S2CM_CreateBattleBarrier.Types.CreateBattleBarrierInfo();
+              battleInfo_ = new global::Crazy.Common.S2CM_CreateBattleBarrier.Types.CreateBattleBarrierInfo();
             }
-            input.ReadMessage(BattleInfo);
+            input.ReadMessage(battleInfo_);
             break;
           }
           case 720: {

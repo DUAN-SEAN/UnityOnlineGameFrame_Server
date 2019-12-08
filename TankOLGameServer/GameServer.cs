@@ -33,7 +33,7 @@ namespace TankOLGameServer
                 return false;
             }
             //获取当前服务器的配置文件
-            m_gameServerGlobalConfig = base.m_globalConfigure as global::GameServer.Configure.TankGameServerGlobalConfig;
+            m_gameServerGlobalConfig = base.m_globalConfigure as global::GameServer.Configure.SampleGameServerGlobalConfig;
 
             //数据库配置
             var dbConfig = m_gameServerGlobalConfig.DBConfigInfos[0];
@@ -108,7 +108,7 @@ namespace TankOLGameServer
         /// <summary>
         /// 获取当前服务器特定配置数据
         /// </summary>
-        public global::GameServer.Configure.TankGameServerGlobalConfig m_gameServerGlobalConfig { get; private set; }
+        public global::GameServer.Configure.SampleGameServerGlobalConfig m_gameServerGlobalConfig { get; private set; }
         /// <summary>
         /// 服务器用于顺序化AsyncAction的队列池，根据每个Context的UserId来分配该Context对应的AsyncAction所属的队列
         /// </summary>

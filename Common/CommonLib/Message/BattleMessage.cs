@@ -3504,7 +3504,7 @@ namespace Crazy.Common {
             break;
           }
           case 24: {
-            State = (global::Crazy.Common.S2C_ExitBattleMessage.Types.State) input.ReadEnum();
+            state_ = (global::Crazy.Common.S2C_ExitBattleMessage.Types.State) input.ReadEnum();
             break;
           }
           case 720: {

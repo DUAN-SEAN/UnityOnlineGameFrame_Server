@@ -68,7 +68,7 @@
     <Compile Include="Base\MessageBase\MessageHandlerAttribute.cs" />
     <Compile Include="Base\MessageBase\RpcException.cs" />
     <Compile Include="Configure\ConfigLoader.cs" />
-    <Compile Include="Configure\ConfigureTank\GameServerConfig.cs" />
+    <Compile Include="Configure\ConfigureSamples\SampleGameServerConfig.cs" />
     <Compile Include="Configure\Configure\GameServerConfig.cs" />
     <Compile Include="Configure\ServerBaseGlobalConfigure.cs" />
     <Compile Include="Configure\Util.cs" />
@@ -78,6 +78,8 @@
     <Compile Include="Message\MessageOpcode.cs" />
     <Compile Include="Message\RpcMessage.cs" />
     <Compile Include="Message\RpcMessageOpcode.cs" />
+    <Compile Include="Message\TestMessage.cs" />
+    <Compile Include="Message\TestMessageOpcode.cs" />
     <Compile Include="ObjectPool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Protocol\AHandler.cs" />
@@ -103,9 +105,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Base\Log\Configure\NLog.config" />
-    <None Include="Configure\ConfigureTank\XML\GameServerConfig.config" />
+    <None Include="Configure\ConfigureSamples\XML\GameServerConfig.config" />
     <None Include="Configure\Configure\XML\GameServerConfig.config" />
     <None Include="Proto\BattleMessage.proto" />
+    <None Include="Proto\TestMessage.proto" />
     <None Include="Proto\RpcMessage.proto" />
     <None Include="Proto\Message.proto" />
   </ItemGroup>

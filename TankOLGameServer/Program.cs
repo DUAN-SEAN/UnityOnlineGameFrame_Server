@@ -13,8 +13,8 @@ namespace TankOLGameServer
         static void Main(string[] args)
         {
             GameServer gameServer = new GameServer();
-            if (!gameServer.Initialize<TankGameServerGlobalConfig, TankGameServerPlayerContext>
-                (@"GameServerConfig.config", typeof(GameServerPlayerContext), new ProtobufPacker(), "TankGameServer"))
+            if (!gameServer.Initialize<SampleGameServerGlobalConfig, SampleGameServerPlayerContext>
+                (@"GameServerConfig.config", typeof(SampleGameServerPlayerContext), new ProtobufPacker(), "TankGameServer"))
             {
                 Log.Error("初始化服务器错误");
             }

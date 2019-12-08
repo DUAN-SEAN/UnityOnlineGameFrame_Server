@@ -1,0 +1,10 @@
+ProtobufAutoComplier.exe protoc.exe "C:\Users\sean duan\source\repos\CrazyFrameProject\Libs\CommonLib\Proto" "C:\Users\sean duan\source\repos\CrazyFrameProject\Libs\CommonLib\Message" Crazy.Common Crazy.Common 100
+该工具能够根据你提供的proto目录将目录下所有的proto编译到指定的message目录中，并且自动生成opcode和指定的接口
+参数如下
+/// args:
+/// 0 protoc编译器的路径
+/// 1 proto的目录路径
+/// 2 message的目录路径
+/// 3 opcode的命名空间 
+/// 4 opcode的using程序集 （目前只能指定一个足够，一般情况下不需要使用）
+/// 5 opcode的最小ID（要与本地消息Id进行区分，一般从1000开始，前1000个留给本地消息使用）

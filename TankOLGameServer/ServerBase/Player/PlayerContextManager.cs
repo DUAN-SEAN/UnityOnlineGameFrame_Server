@@ -289,7 +289,7 @@ namespace Crazy.ServerBase
         /// <param name="playerId"></param>
         public void SendSingleLocalMessage(ILocalMessage msg,string playerId)
         {
-            if (playerId == null || playerId == default) return;
+            if (playerId == null ) return;
             var playerCtx = FindPlayerContextByString(playerId);
             if (playerCtx != null)
             {

@@ -10,7 +10,7 @@ namespace TankOLGameServer
     /// <summary>
     /// Tank 玩家现场信息 目前为空 没有任何消息
     /// </summary>
-    public partial class TankGameServerPlayerContext:PlayerContextBase
+    public partial class SampleGameServerPlayerContext:PlayerContextBase
     {
 
     }
