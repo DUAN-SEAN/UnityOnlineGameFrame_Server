@@ -25,11 +25,22 @@ namespace Crazy.Common {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChFUZXN0TWVzc2FnZS5wcm90bxIMQ3JhenkuQ29tbW9uIi4KD0MyU19UZXN0",
-            "TWVzc2FnZRINCgVScGNJZBhaIAEoBRIMCgREYXRhGAEgASgJYgZwcm90bzM="));
+            "TWVzc2FnZRINCgVScGNJZBhaIAEoBRIMCgREYXRhGAEgASgJIjsKGFMyQ19B",
+            "bGxvY1BsYXllcklkTWVzc2FnZRINCgVScGNJZBhaIAEoBRIQCghQbGF5ZXJJ",
+            "ZBgBIAEoCSLCAgobQzJTX1BsYXllclN5bmNFbnRpdHlNZXNzYWdlEg0KBVJw",
+            "Y0lkGFogASgFEhAKCFBsYXllcklkGAEgASgJEj4KA1BvcxgCIAEoCzIxLkNy",
+            "YXp5LkNvbW1vbi5DMlNfUGxheWVyU3luY0VudGl0eU1lc3NhZ2UuVmVjdG9y",
+            "MxJCCgdGb3J3YXJkGAMgASgLMjEuQ3JhenkuQ29tbW9uLkMyU19QbGF5ZXJT",
+            "eW5jRW50aXR5TWVzc2FnZS5WZWN0b3IzEhAKCElzR3JvdW5kGAQgASgIEhUK",
+            "DVZlcnRpY2FsU3BlZWQYBSABKAISFAoMRm9yd2FyZFNwZWVkGAYgASgCEhMK",
+            "C01lbGVlQXR0YWNrGAcgASgIGioKB1ZlY3RvcjMSCQoBWBgBIAEoAhIJCgFZ",
+            "GAIgASgCEgkKAVoYAyABKAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2S_TestMessage), global::Crazy.Common.C2S_TestMessage.Parser, new[]{ "RpcId", "Data" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2S_TestMessage), global::Crazy.Common.C2S_TestMessage.Parser, new[]{ "RpcId", "Data" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.S2C_AllocPlayerIdMessage), global::Crazy.Common.S2C_AllocPlayerIdMessage.Parser, new[]{ "RpcId", "PlayerId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2S_PlayerSyncEntityMessage), global::Crazy.Common.C2S_PlayerSyncEntityMessage.Parser, new[]{ "RpcId", "PlayerId", "Pos", "Forward", "IsGround", "VerticalSpeed", "ForwardSpeed", "MeleeAttack" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2S_PlayerSyncEntityMessage.Types.Vector3), global::Crazy.Common.C2S_PlayerSyncEntityMessage.Types.Vector3.Parser, new[]{ "X", "Y", "Z" }, null, null, null)})
           }));
     }
     #endregion
@@ -193,6 +204,695 @@ namespace Crazy.Common {
         }
       }
     }
+
+  }
+
+  public sealed partial class S2C_AllocPlayerIdMessage : pb::IMessage<S2C_AllocPlayerIdMessage> {
+    private static readonly pb::MessageParser<S2C_AllocPlayerIdMessage> _parser = new pb::MessageParser<S2C_AllocPlayerIdMessage>(() => new S2C_AllocPlayerIdMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<S2C_AllocPlayerIdMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public S2C_AllocPlayerIdMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public S2C_AllocPlayerIdMessage(S2C_AllocPlayerIdMessage other) : this() {
+      rpcId_ = other.rpcId_;
+      playerId_ = other.playerId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public S2C_AllocPlayerIdMessage Clone() {
+      return new S2C_AllocPlayerIdMessage(this);
+    }
+
+    /// <summary>Field number for the "RpcId" field.</summary>
+    public const int RpcIdFieldNumber = 90;
+    private int rpcId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RpcId {
+      get { return rpcId_; }
+      set {
+        rpcId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 1;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as S2C_AllocPlayerIdMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(S2C_AllocPlayerIdMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RpcId != other.RpcId) return false;
+      if (PlayerId != other.PlayerId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerId);
+      }
+      if (RpcId != 0) {
+        output.WriteRawTag(208, 5);
+        output.WriteInt32(RpcId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RpcId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(S2C_AllocPlayerIdMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RpcId != 0) {
+        RpcId = other.RpcId;
+      }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 720: {
+            RpcId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /////验证登陆消息
+  /// </summary>
+  public sealed partial class C2S_PlayerSyncEntityMessage : pb::IMessage<C2S_PlayerSyncEntityMessage> {
+    private static readonly pb::MessageParser<C2S_PlayerSyncEntityMessage> _parser = new pb::MessageParser<C2S_PlayerSyncEntityMessage>(() => new C2S_PlayerSyncEntityMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<C2S_PlayerSyncEntityMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public C2S_PlayerSyncEntityMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public C2S_PlayerSyncEntityMessage(C2S_PlayerSyncEntityMessage other) : this() {
+      rpcId_ = other.rpcId_;
+      playerId_ = other.playerId_;
+      pos_ = other.pos_ != null ? other.pos_.Clone() : null;
+      forward_ = other.forward_ != null ? other.forward_.Clone() : null;
+      isGround_ = other.isGround_;
+      verticalSpeed_ = other.verticalSpeed_;
+      forwardSpeed_ = other.forwardSpeed_;
+      meleeAttack_ = other.meleeAttack_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public C2S_PlayerSyncEntityMessage Clone() {
+      return new C2S_PlayerSyncEntityMessage(this);
+    }
+
+    /// <summary>Field number for the "RpcId" field.</summary>
+    public const int RpcIdFieldNumber = 90;
+    private int rpcId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RpcId {
+      get { return rpcId_; }
+      set {
+        rpcId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 1;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Pos" field.</summary>
+    public const int PosFieldNumber = 2;
+    private global::Crazy.Common.C2S_PlayerSyncEntityMessage.Types.Vector3 pos_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Crazy.Common.C2S_PlayerSyncEntityMessage.Types.Vector3 Pos {
+      get { return pos_; }
+      set {
+        pos_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Forward" field.</summary>
+    public const int ForwardFieldNumber = 3;
+    private global::Crazy.Common.C2S_PlayerSyncEntityMessage.Types.Vector3 forward_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Crazy.Common.C2S_PlayerSyncEntityMessage.Types.Vector3 Forward {
+      get { return forward_; }
+      set {
+        forward_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "IsGround" field.</summary>
+    public const int IsGroundFieldNumber = 4;
+    private bool isGround_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsGround {
+      get { return isGround_; }
+      set {
+        isGround_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VerticalSpeed" field.</summary>
+    public const int VerticalSpeedFieldNumber = 5;
+    private float verticalSpeed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float VerticalSpeed {
+      get { return verticalSpeed_; }
+      set {
+        verticalSpeed_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ForwardSpeed" field.</summary>
+    public const int ForwardSpeedFieldNumber = 6;
+    private float forwardSpeed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float ForwardSpeed {
+      get { return forwardSpeed_; }
+      set {
+        forwardSpeed_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "MeleeAttack" field.</summary>
+    public const int MeleeAttackFieldNumber = 7;
+    private bool meleeAttack_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool MeleeAttack {
+      get { return meleeAttack_; }
+      set {
+        meleeAttack_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as C2S_PlayerSyncEntityMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(C2S_PlayerSyncEntityMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RpcId != other.RpcId) return false;
+      if (PlayerId != other.PlayerId) return false;
+      if (!object.Equals(Pos, other.Pos)) return false;
+      if (!object.Equals(Forward, other.Forward)) return false;
+      if (IsGround != other.IsGround) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(VerticalSpeed, other.VerticalSpeed)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ForwardSpeed, other.ForwardSpeed)) return false;
+      if (MeleeAttack != other.MeleeAttack) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (pos_ != null) hash ^= Pos.GetHashCode();
+      if (forward_ != null) hash ^= Forward.GetHashCode();
+      if (IsGround != false) hash ^= IsGround.GetHashCode();
+      if (VerticalSpeed != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(VerticalSpeed);
+      if (ForwardSpeed != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ForwardSpeed);
+      if (MeleeAttack != false) hash ^= MeleeAttack.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerId);
+      }
+      if (pos_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Pos);
+      }
+      if (forward_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Forward);
+      }
+      if (IsGround != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(IsGround);
+      }
+      if (VerticalSpeed != 0F) {
+        output.WriteRawTag(45);
+        output.WriteFloat(VerticalSpeed);
+      }
+      if (ForwardSpeed != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(ForwardSpeed);
+      }
+      if (MeleeAttack != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(MeleeAttack);
+      }
+      if (RpcId != 0) {
+        output.WriteRawTag(208, 5);
+        output.WriteInt32(RpcId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RpcId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
+      if (pos_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pos);
+      }
+      if (forward_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Forward);
+      }
+      if (IsGround != false) {
+        size += 1 + 1;
+      }
+      if (VerticalSpeed != 0F) {
+        size += 1 + 4;
+      }
+      if (ForwardSpeed != 0F) {
+        size += 1 + 4;
+      }
+      if (MeleeAttack != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(C2S_PlayerSyncEntityMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RpcId != 0) {
+        RpcId = other.RpcId;
+      }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
+      if (other.pos_ != null) {
+        if (pos_ == null) {
+          pos_ = new global::Crazy.Common.C2S_PlayerSyncEntityMessage.Types.Vector3();
+        }
+        Pos.MergeFrom(other.Pos);
+      }
+      if (other.forward_ != null) {
+        if (forward_ == null) {
+          forward_ = new global::Crazy.Common.C2S_PlayerSyncEntityMessage.Types.Vector3();
+        }
+        Forward.MergeFrom(other.Forward);
+      }
+      if (other.IsGround != false) {
+        IsGround = other.IsGround;
+      }
+      if (other.VerticalSpeed != 0F) {
+        VerticalSpeed = other.VerticalSpeed;
+      }
+      if (other.ForwardSpeed != 0F) {
+        ForwardSpeed = other.ForwardSpeed;
+      }
+      if (other.MeleeAttack != false) {
+        MeleeAttack = other.MeleeAttack;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 18: {
+            if (pos_ == null) {
+              pos_ = new global::Crazy.Common.C2S_PlayerSyncEntityMessage.Types.Vector3();
+            }
+            input.ReadMessage(pos_);
+            break;
+          }
+          case 26: {
+            if (forward_ == null) {
+              forward_ = new global::Crazy.Common.C2S_PlayerSyncEntityMessage.Types.Vector3();
+            }
+            input.ReadMessage(forward_);
+            break;
+          }
+          case 32: {
+            IsGround = input.ReadBool();
+            break;
+          }
+          case 45: {
+            VerticalSpeed = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            ForwardSpeed = input.ReadFloat();
+            break;
+          }
+          case 56: {
+            MeleeAttack = input.ReadBool();
+            break;
+          }
+          case 720: {
+            RpcId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the C2S_PlayerSyncEntityMessage message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public sealed partial class Vector3 : pb::IMessage<Vector3> {
+        private static readonly pb::MessageParser<Vector3> _parser = new pb::MessageParser<Vector3>(() => new Vector3());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pb::MessageParser<Vector3> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Crazy.Common.C2S_PlayerSyncEntityMessage.Descriptor.NestedTypes[0]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Vector3() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Vector3(Vector3 other) : this() {
+          x_ = other.x_;
+          y_ = other.y_;
+          z_ = other.z_;
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public Vector3 Clone() {
+          return new Vector3(this);
+        }
+
+        /// <summary>Field number for the "X" field.</summary>
+        public const int XFieldNumber = 1;
+        private float x_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public float X {
+          get { return x_; }
+          set {
+            x_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "Y" field.</summary>
+        public const int YFieldNumber = 2;
+        private float y_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public float Y {
+          get { return y_; }
+          set {
+            y_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "Z" field.</summary>
+        public const int ZFieldNumber = 3;
+        private float z_;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public float Z {
+          get { return z_; }
+          set {
+            z_ = value;
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override bool Equals(object other) {
+          return Equals(other as Vector3);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public bool Equals(Vector3 other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(X, other.X)) return false;
+          if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Y, other.Y)) return false;
+          if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Z, other.Z)) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (X != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(X);
+          if (Y != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Y);
+          if (Z != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Z);
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void WriteTo(pb::CodedOutputStream output) {
+          if (X != 0F) {
+            output.WriteRawTag(13);
+            output.WriteFloat(X);
+          }
+          if (Y != 0F) {
+            output.WriteRawTag(21);
+            output.WriteFloat(Y);
+          }
+          if (Z != 0F) {
+            output.WriteRawTag(29);
+            output.WriteFloat(Z);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public int CalculateSize() {
+          int size = 0;
+          if (X != 0F) {
+            size += 1 + 4;
+          }
+          if (Y != 0F) {
+            size += 1 + 4;
+          }
+          if (Z != 0F) {
+            size += 1 + 4;
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(Vector3 other) {
+          if (other == null) {
+            return;
+          }
+          if (other.X != 0F) {
+            X = other.X;
+          }
+          if (other.Y != 0F) {
+            Y = other.Y;
+          }
+          if (other.Z != 0F) {
+            Z = other.Z;
+          }
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        public void MergeFrom(pb::CodedInputStream input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 13: {
+                X = input.ReadFloat();
+                break;
+              }
+              case 21: {
+                Y = input.ReadFloat();
+                break;
+              }
+              case 29: {
+                Z = input.ReadFloat();
+                break;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+    #endregion
 
   }
 
