@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Crazy.Common;
 using GameServer.Configure;
 
-namespace TankOLGameServer
+namespace GameServer
 {
     class Program
     {

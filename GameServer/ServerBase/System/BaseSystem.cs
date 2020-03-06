@@ -45,7 +45,7 @@ namespace Crazy.ServerBase
         {
             
             ILocalMessage localMessage;
-            if (p_localMessages.TryDequeue(out localMessage))
+            while (p_localMessages.TryDequeue(out localMessage))
             {
                 var nothing = OnMessage(localMessage);
             }

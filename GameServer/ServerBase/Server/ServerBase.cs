@@ -257,7 +257,7 @@ namespace Crazy.ServerBase
         /// <param name="msg"></param>
         public void PostMessageToSystem<System>(ILocalMessage msg) where System : BaseSystem
         {
-            BaseSystem baseSystem = m_systemDic[typeof(System)];
+            BaseSystem baseSystem = m_SystemDic[typeof(System)];
             if (baseSystem == null)
             {
                 Log.Fatal("TypeSystem::" + typeof(System) + "不存在，消息Message::" + msg.GetType() + "发送失败");
@@ -266,7 +266,7 @@ namespace Crazy.ServerBase
             baseSystem.PostLocalMessage(msg);
         }
 
-        protected readonly Dictionary<Type, BaseSystem> m_systemDic = new Dictionary<Type, BaseSystem>();
+        protected readonly Dictionary<Type, BaseSystem> m_SystemDic = new Dictionary<Type, BaseSystem>();
 
 
 

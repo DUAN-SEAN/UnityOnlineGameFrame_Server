@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Crazy.Common;
 using Crazy.ServerBase;
+using GameServer.System;
 
-namespace TankOLGameServer
+namespace GameServer
 {
-    class GameServer:ServerBase
+    public class GameServer:ServerBase
     {
         public GameServer() : base()
         {
@@ -77,7 +78,7 @@ namespace TankOLGameServer
             //    Log.Error("初始化匹配系统失败");
             //    return false;
             //}
-            //m_systemDic.Add(gameMatchSystem.GetType(), gameMatchSystem);
+            //m_SystemDic.Add(gameMatchSystem.GetType(), gameMatchSystem);
             ////战斗系统初始化
             //var battleSystem = new BattleSystem();
             //if (!battleSystem.Initialize())
@@ -85,10 +86,14 @@ namespace TankOLGameServer
             //    Log.Error("初始化战斗系统失败");
             //    return false;
             //}
-            //m_systemDic.Add(battleSystem.GetType(), battleSystem);
+            //m_SystemDic.Add(battleSystem.GetType(), battleSystem);
+
+            BattleSystem battleSystem = new BattleSystem();
+            m_SystemDic.Add(battleSystem.GetType(),battleSystem);
+
 
             //启动各个系统的Tick功能
-            foreach (var item in m_systemDic.Values)
+            foreach (var item in m_SystemDic.Values)
             {
                 item.Start();//首先System.Start
                 var timeId = TimerManager.SetLoopTimer(100, item.Update);
@@ -99,7 +104,7 @@ namespace TankOLGameServer
 
         public T GetSystem<T>() where T : BaseSystem
         {
-            m_systemDic.TryGetValue(typeof(T), out BaseSystem t);
+            m_SystemDic.TryGetValue(typeof(T), out BaseSystem t);
             return t as T;
         }
 

@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Crazy.Common;
 using Crazy.ServerBase;
 
-namespace TankOLGameServer
+namespace GameServer
 {
     /// <summary>
     /// Tank 玩家现场信息 目前为空 没有任何消息
     /// </summary>
     public partial class SampleGameServerPlayerContext:PlayerContextBase
     {
+        private static int AllocPlayerId = 1;
+        public override void OnConnected()
+        {
+            base.OnConnected();
 
+            Send(new S2C_AllocPlayerIdMessage {PlayerId = "test " + AllocPlayerId++});
+        }
     }
 }

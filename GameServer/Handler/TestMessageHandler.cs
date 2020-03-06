@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Crazy.Common;
 
-namespace TankOLGameServer.Handler
+namespace GameServer.Handler
 {
     [MessageHandler]
     public class TestMessageHandler:AMHandler<C2S_TestMessage>
