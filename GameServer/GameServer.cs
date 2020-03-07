@@ -91,6 +91,8 @@ namespace GameServer
             BattleSystem battleSystem = new BattleSystem();
             m_SystemDic.Add(battleSystem.GetType(),battleSystem);
 
+            LobbySystem lobbySystem = new LobbySystem();
+            m_SystemDic.Add(lobbySystem.GetType(),lobbySystem);
 
             //启动各个系统的Tick功能
             foreach (var item in m_SystemDic.Values)

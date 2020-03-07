@@ -14,6 +14,7 @@ namespace GameServer.System
         public override void Start()
         {
             base.Start();
+            m_BattleEntityDic = new Dictionary<long, BattleEntity>();
         }
 
         public override void Update(int data1 = 0, long data2 = 0, object data3 = null)
@@ -52,14 +53,42 @@ namespace GameServer.System
         private void OnSyncPlayerEntity(C2S_PlayerSyncEntityMessage msg)
         {
             if (msg == null) return;
-
-            GameServer.Instance.PlayerCtxManager.BroadcastLocalMessage(new SystemSendNetMessage{Message = msg});
+            BroadcastBattleEntity(msg,msg.RoomId);
 
         }
-
-        public override bool PostLocalMessage(ILocalMessage msg)
+        public bool EnterClubBattle(string playerId, long roomId)
         {
-            return base.PostLocalMessage(msg);
+            if (!m_BattleEntityDic.TryGetValue(roomId, out var battleEntity))
+            {
+                battleEntity = new BattleEntity();
+
+                m_BattleEntityDic.Add(roomId,battleEntity);
+            }
+            battleEntity.Players.Add(playerId);
+            return true;
+
         }
+
+        public void BroadcastBattleEntity(IMessage msg,long roomId)
+        {
+            if (!m_BattleEntityDic.TryGetValue(roomId, out var battleEntity))
+            {
+                return;
+            }
+            GameServer.Instance.PlayerCtxManager.BroadcastLocalMessagebyPlayerId(new SystemSendNetMessage { Message = msg }, battleEntity.Players);
+            
+
+        }
+        public Dictionary<long, BattleEntity> m_BattleEntityDic;
+
+    }
+
+    public class BattleEntity
+    {
+
+
+        public string Roomer;
+
+        public List<string> Players = new List<string>();
     }
 }

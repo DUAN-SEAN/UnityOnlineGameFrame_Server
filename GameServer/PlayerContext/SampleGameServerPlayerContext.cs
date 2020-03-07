@@ -18,7 +18,11 @@ namespace GameServer
         {
             base.OnConnected();
 
-            Send(new S2C_AllocPlayerIdMessage {PlayerId = "test " + AllocPlayerId++});
+            m_gameUserId = "test " + AllocPlayerId++;
+
+            Send(new S2C_AllocPlayerIdMessage {PlayerId = m_gameUserId });
+
+            GameServer.Instance.PlayerCtxManager.RegisterPlayerContextByString(m_gameUserId, this);
         }
     }
 }

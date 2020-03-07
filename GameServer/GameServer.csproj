@@ -55,7 +55,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Handler\C2S_PlayerSyncEntityMessageHandler.cs" />
+    <Compile Include="Handler\BattleServerMessageHandler.cs" />
+    <Compile Include="Handler\LobbyServerMessageHandler.cs" />
     <Compile Include="Handler\LoginMessageHandler.cs" />
     <Compile Include="Handler\TestMessageHandler.cs" />
     <Compile Include="Program.cs" />
@@ -64,8 +65,10 @@
     <Compile Include="PlayerContext\SampleGameServerPlayerContext.cs" />
     <Compile Include="System\BattleSystem.cs" />
     <Compile Include="System\LobbySystem.cs" />
-    <Compile Include="System\SystemLocalMessage\BattleSystemLocalMessageIDDef.cs" />
-    <Compile Include="System\SystemLocalMessage\BattleSystemMessage.cs" />
+    <Compile Include="System\SystemLocalMessage\Battle\BattleSystemLocalMessageIDDef.cs" />
+    <Compile Include="System\SystemLocalMessage\Battle\BattleSystemMessage.cs" />
+    <Compile Include="System\SystemLocalMessage\Lobby\LobbySystemMessage.cs" />
+    <Compile Include="System\SystemLocalMessage\Lobby\LobbySystemLocalMessageIDDef.cs" />
     <Compile Include="System\UserSystem.cs" />
   </ItemGroup>
   <ItemGroup>

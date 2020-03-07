@@ -13,6 +13,7 @@ namespace GameServer
         public int MessageId { get=> BattleSystemLocalMessageIDDef.PlayerSyncEntityBattleSystemMessageID; }
 
         public C2S_PlayerSyncEntityMessage PlayerSyncEntityMessage;
+        
 
     }
 

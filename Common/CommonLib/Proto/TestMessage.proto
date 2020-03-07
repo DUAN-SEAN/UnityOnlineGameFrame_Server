@@ -12,7 +12,14 @@ message S2C_AllocPlayerIdMessage // IMessage
 	int32 RpcId = 90;
 	string PlayerId = 1;
 }
-////验证登陆消息
+message Vector3
+{
+	float X = 1;
+	float Y = 2;
+	float Z = 3;
+
+}
+////玩家同步自身位置等信息
 message C2S_PlayerSyncEntityMessage // IMessage
 {
 	int32 RpcId = 90;
@@ -28,12 +35,102 @@ message C2S_PlayerSyncEntityMessage // IMessage
 	bool MeleeAttack = 7;
 
 
+	int64 RoomId = 8;
+	
+	
+}
 
-	message Vector3
-	{
-		float X = 1;
-		float Y = 2;
-		float Z = 3;
+message C2B_EnterClubBattleReqMessage // IRequest
+{
+	int32 RpcId = 90;
+	int64 RoomId = 1;
+}
 
-	}
+message B2C_EnterClubBattleAckMessage // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int64 RoomId = 1;
+}
+
+message B2C_InitPlayerEntityBattleMessage // IMessage
+{
+	int32 RpcId = 90;
+	string PlayerId = 1;
+
+	Vector3 Pos = 2;
+	Vector3 Forward = 3;
+
+	bool IsGround = 4;
+	float VerticalSpeed = 5;
+	float ForwardSpeed = 6;
+
+	bool MeleeAttack = 7;
+
+	int64 RoomId = 8;
+	
+	
+}
+
+message C2L_CreateRoomReqMessage // IRequest
+{
+	int32 RpcId = 90;
+}
+message L2C_CreateRoomAckMessage // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+
+	int64 RoomId = 1;
+
+}
+
+message C2L_JoinRoomReqMessage // IRequest
+{
+	int32 RpcId = 90;
+	int64 RoomId = 1;
+}
+message L2C_JoinRoomAckMessage // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+
+	int64 RoomId = 1;
+}
+message C2L_GetRoomInfoReqMessage // IRequest
+{
+	int32 RpcId = 90;
+	int64 RoomId = 1;
+}
+message L2C_GetRoomInfoAckMessage // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+
+	RoomInfoMessage RoomInfo = 1;
+}
+message C2L_GetRoomListInfoReqMessage // IRequest
+{
+	int32 RpcId = 90;
+}
+message L2C_GetRoomListInfoAckMessage // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+
+	repeated RoomInfoMessage RoomInfos = 1;
+}
+message RoomInfoMessage
+{
+	int64 RoomId = 1;
+	string Roomer = 2;
+	string RoomName = 3;
+	int32 RoomState = 4;
+	int32 RoomCapacity = 5;
+	repeated string PlayerIds = 6;
 }
