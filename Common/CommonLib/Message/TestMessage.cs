@@ -28,48 +28,61 @@ namespace Crazy.Common {
             "TWVzc2FnZRINCgVScGNJZBhaIAEoBRIMCgREYXRhGAEgASgJIjsKGFMyQ19B",
             "bGxvY1BsYXllcklkTWVzc2FnZRINCgVScGNJZBhaIAEoBRIQCghQbGF5ZXJJ",
             "ZBgBIAEoCSIqCgdWZWN0b3IzEgkKAVgYASABKAISCQoBWRgCIAEoAhIJCgFa",
-            "GAMgASgCIu4BChtDMlNfUGxheWVyU3luY0VudGl0eU1lc3NhZ2USDQoFUnBj",
-            "SWQYWiABKAUSEAoIUGxheWVySWQYASABKAkSIgoDUG9zGAIgASgLMhUuQ3Jh",
-            "enkuQ29tbW9uLlZlY3RvcjMSJgoHRm9yd2FyZBgDIAEoCzIVLkNyYXp5LkNv",
-            "bW1vbi5WZWN0b3IzEhAKCElzR3JvdW5kGAQgASgIEhUKDVZlcnRpY2FsU3Bl",
-            "ZWQYBSABKAISFAoMRm9yd2FyZFNwZWVkGAYgASgCEhMKC01lbGVlQXR0YWNr",
-            "GAcgASgIEg4KBlJvb21JZBgIIAEoAyI+Ch1DMkJfRW50ZXJDbHViQmF0dGxl",
-            "UmVxTWVzc2FnZRINCgVScGNJZBhaIAEoBRIOCgZSb29tSWQYASABKAMiXgod",
-            "QjJDX0VudGVyQ2x1YkJhdHRsZUFja01lc3NhZ2USDQoFUnBjSWQYWiABKAUS",
-            "DQoFRXJyb3IYWyABKAUSDwoHTWVzc2FnZRhcIAEoCRIOCgZSb29tSWQYASAB",
-            "KAMi9AEKIUIyQ19Jbml0UGxheWVyRW50aXR5QmF0dGxlTWVzc2FnZRINCgVS",
-            "cGNJZBhaIAEoBRIQCghQbGF5ZXJJZBgBIAEoCRIiCgNQb3MYAiABKAsyFS5D",
-            "cmF6eS5Db21tb24uVmVjdG9yMxImCgdGb3J3YXJkGAMgASgLMhUuQ3Jhenku",
-            "Q29tbW9uLlZlY3RvcjMSEAoISXNHcm91bmQYBCABKAgSFQoNVmVydGljYWxT",
-            "cGVlZBgFIAEoAhIUCgxGb3J3YXJkU3BlZWQYBiABKAISEwoLTWVsZWVBdHRh",
-            "Y2sYByABKAgSDgoGUm9vbUlkGAggASgDIikKGEMyTF9DcmVhdGVSb29tUmVx",
-            "TWVzc2FnZRINCgVScGNJZBhaIAEoBSJZChhMMkNfQ3JlYXRlUm9vbUFja01l",
-            "c3NhZ2USDQoFUnBjSWQYWiABKAUSDQoFRXJyb3IYWyABKAUSDwoHTWVzc2Fn",
-            "ZRhcIAEoCRIOCgZSb29tSWQYASABKAMiNwoWQzJMX0pvaW5Sb29tUmVxTWVz",
-            "c2FnZRINCgVScGNJZBhaIAEoBRIOCgZSb29tSWQYASABKAMiVwoWTDJDX0pv",
-            "aW5Sb29tQWNrTWVzc2FnZRINCgVScGNJZBhaIAEoBRINCgVFcnJvchhbIAEo",
-            "BRIPCgdNZXNzYWdlGFwgASgJEg4KBlJvb21JZBgBIAEoAyI6ChlDMkxfR2V0",
-            "Um9vbUluZm9SZXFNZXNzYWdlEg0KBVJwY0lkGFogASgFEg4KBlJvb21JZBgB",
-            "IAEoAyJ7ChlMMkNfR2V0Um9vbUluZm9BY2tNZXNzYWdlEg0KBVJwY0lkGFog",
-            "ASgFEg0KBUVycm9yGFsgASgFEg8KB01lc3NhZ2UYXCABKAkSLwoIUm9vbUlu",
-            "Zm8YASABKAsyHS5DcmF6eS5Db21tb24uUm9vbUluZm9NZXNzYWdlIi4KHUMy",
-            "TF9HZXRSb29tTGlzdEluZm9SZXFNZXNzYWdlEg0KBVJwY0lkGFogASgFIoAB",
-            "Ch1MMkNfR2V0Um9vbUxpc3RJbmZvQWNrTWVzc2FnZRINCgVScGNJZBhaIAEo",
-            "BRINCgVFcnJvchhbIAEoBRIPCgdNZXNzYWdlGFwgASgJEjAKCVJvb21JbmZv",
-            "cxgBIAMoCzIdLkNyYXp5LkNvbW1vbi5Sb29tSW5mb01lc3NhZ2UifwoPUm9v",
-            "bUluZm9NZXNzYWdlEg4KBlJvb21JZBgBIAEoAxIOCgZSb29tZXIYAiABKAkS",
-            "EAoIUm9vbU5hbWUYAyABKAkSEQoJUm9vbVN0YXRlGAQgASgFEhQKDFJvb21D",
-            "YXBhY2l0eRgFIAEoBRIRCglQbGF5ZXJJZHMYBiADKAliBnByb3RvMw=="));
+            "GAMgASgCIoICCh1TeW5jUGxheWVyRW50aXR5QmF0dGxlTWVzc2FnZRINCgVS",
+            "cGNJZBhaIAEoBRIOCgZSb29tSWQYZSABKAMSEAoIUGxheWVySWQYZiABKAkS",
+            "EAoIRW50aXR5SWQYZyABKAMSIgoDUG9zGAIgASgLMhUuQ3JhenkuQ29tbW9u",
+            "LlZlY3RvcjMSJgoHRm9yd2FyZBgDIAEoCzIVLkNyYXp5LkNvbW1vbi5WZWN0",
+            "b3IzEhAKCElzR3JvdW5kGAQgASgIEhUKDVZlcnRpY2FsU3BlZWQYBSABKAIS",
+            "FAoMRm9yd2FyZFNwZWVkGAYgASgCEhMKC01lbGVlQXR0YWNrGAcgASgIIs0B",
+            "CilTeW5jQ2hvbXBlckVudGl0eVBoeXNpY1N0YXRlQmF0dGxlTWVzc2FnZRIN",
+            "CgVScGNJZBhaIAEoBRIOCgZSb29tSWQYZSABKAMSEAoIUGxheWVySWQYZiAB",
+            "KAkSEAoIRW50aXR5SWQYZyABKAMSEQoJRW5lbXlUeXBlGAEgASgFEiIKA1Bv",
+            "cxgCIAEoCzIVLkNyYXp5LkNvbW1vbi5WZWN0b3IzEiYKB0ZvcndhcmQYAyAB",
+            "KAsyFS5DcmF6eS5Db21tb24uVmVjdG9yMyJxChtTeW5jU3RhcnRMZXZlbEJh",
+            "dHRsZU1lc3NhZ2USDQoFUnBjSWQYWiABKAUSDgoGUm9vbUlkGGUgASgDEhAK",
+            "CFBsYXllcklkGGYgASgJEhAKCEVudGl0eUlkGGcgASgDEg8KB0xldmVsSWQY",
+            "ASABKAUiPgodQzJCX0VudGVyQ2x1YkJhdHRsZVJlcU1lc3NhZ2USDQoFUnBj",
+            "SWQYWiABKAUSDgoGUm9vbUlkGAEgASgDIl4KHUIyQ19FbnRlckNsdWJCYXR0",
+            "bGVBY2tNZXNzYWdlEg0KBVJwY0lkGFogASgFEg0KBUVycm9yGFsgASgFEg8K",
+            "B01lc3NhZ2UYXCABKAkSDgoGUm9vbUlkGAEgASgDIvQBCiFCMkNfSW5pdFBs",
+            "YXllckVudGl0eUJhdHRsZU1lc3NhZ2USDQoFUnBjSWQYWiABKAUSEAoIUGxh",
+            "eWVySWQYASABKAkSIgoDUG9zGAIgASgLMhUuQ3JhenkuQ29tbW9uLlZlY3Rv",
+            "cjMSJgoHRm9yd2FyZBgDIAEoCzIVLkNyYXp5LkNvbW1vbi5WZWN0b3IzEhAK",
+            "CElzR3JvdW5kGAQgASgIEhUKDVZlcnRpY2FsU3BlZWQYBSABKAISFAoMRm9y",
+            "d2FyZFNwZWVkGAYgASgCEhMKC01lbGVlQXR0YWNrGAcgASgIEg4KBlJvb21J",
+            "ZBgIIAEoAyJXCiRCMkNfTWlzc2luZ1BsYXllckVudGl0eUJhdHRsZU1lc3Nh",
+            "Z2USDQoFUnBjSWQYWiABKAUSDgoGUm9vbUlkGAEgASgDEhAKCFBsYXllcklk",
+            "GAIgASgJIikKGEMyTF9DcmVhdGVSb29tUmVxTWVzc2FnZRINCgVScGNJZBha",
+            "IAEoBSJZChhMMkNfQ3JlYXRlUm9vbUFja01lc3NhZ2USDQoFUnBjSWQYWiAB",
+            "KAUSDQoFRXJyb3IYWyABKAUSDwoHTWVzc2FnZRhcIAEoCRIOCgZSb29tSWQY",
+            "ASABKAMiNwoWQzJMX0pvaW5Sb29tUmVxTWVzc2FnZRINCgVScGNJZBhaIAEo",
+            "BRIOCgZSb29tSWQYASABKAMiVwoWTDJDX0pvaW5Sb29tQWNrTWVzc2FnZRIN",
+            "CgVScGNJZBhaIAEoBRINCgVFcnJvchhbIAEoBRIPCgdNZXNzYWdlGFwgASgJ",
+            "Eg4KBlJvb21JZBgBIAEoAyI6ChlDMkxfR2V0Um9vbUluZm9SZXFNZXNzYWdl",
+            "Eg0KBVJwY0lkGFogASgFEg4KBlJvb21JZBgBIAEoAyJ7ChlMMkNfR2V0Um9v",
+            "bUluZm9BY2tNZXNzYWdlEg0KBVJwY0lkGFogASgFEg0KBUVycm9yGFsgASgF",
+            "Eg8KB01lc3NhZ2UYXCABKAkSLwoIUm9vbUluZm8YASABKAsyHS5DcmF6eS5D",
+            "b21tb24uUm9vbUluZm9NZXNzYWdlIi4KHUMyTF9HZXRSb29tTGlzdEluZm9S",
+            "ZXFNZXNzYWdlEg0KBVJwY0lkGFogASgFIoABCh1MMkNfR2V0Um9vbUxpc3RJ",
+            "bmZvQWNrTWVzc2FnZRINCgVScGNJZBhaIAEoBRINCgVFcnJvchhbIAEoBRIP",
+            "CgdNZXNzYWdlGFwgASgJEjAKCVJvb21JbmZvcxgBIAMoCzIdLkNyYXp5LkNv",
+            "bW1vbi5Sb29tSW5mb01lc3NhZ2UifwoPUm9vbUluZm9NZXNzYWdlEg4KBlJv",
+            "b21JZBgBIAEoAxIOCgZSb29tZXIYAiABKAkSEAoIUm9vbU5hbWUYAyABKAkS",
+            "EQoJUm9vbVN0YXRlGAQgASgFEhQKDFJvb21DYXBhY2l0eRgFIAEoBRIRCglQ",
+            "bGF5ZXJJZHMYBiADKAliBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2S_TestMessage), global::Crazy.Common.C2S_TestMessage.Parser, new[]{ "RpcId", "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.S2C_AllocPlayerIdMessage), global::Crazy.Common.S2C_AllocPlayerIdMessage.Parser, new[]{ "RpcId", "PlayerId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.Vector3), global::Crazy.Common.Vector3.Parser, new[]{ "X", "Y", "Z" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2S_PlayerSyncEntityMessage), global::Crazy.Common.C2S_PlayerSyncEntityMessage.Parser, new[]{ "RpcId", "PlayerId", "Pos", "Forward", "IsGround", "VerticalSpeed", "ForwardSpeed", "MeleeAttack", "RoomId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncPlayerEntityBattleMessage), global::Crazy.Common.SyncPlayerEntityBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "Pos", "Forward", "IsGround", "VerticalSpeed", "ForwardSpeed", "MeleeAttack" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncChomperEntityPhysicStateBattleMessage), global::Crazy.Common.SyncChomperEntityPhysicStateBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "EnemyType", "Pos", "Forward" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncStartLevelBattleMessage), global::Crazy.Common.SyncStartLevelBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "LevelId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2B_EnterClubBattleReqMessage), global::Crazy.Common.C2B_EnterClubBattleReqMessage.Parser, new[]{ "RpcId", "RoomId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.B2C_EnterClubBattleAckMessage), global::Crazy.Common.B2C_EnterClubBattleAckMessage.Parser, new[]{ "RpcId", "Error", "Message", "RoomId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.B2C_InitPlayerEntityBattleMessage), global::Crazy.Common.B2C_InitPlayerEntityBattleMessage.Parser, new[]{ "RpcId", "PlayerId", "Pos", "Forward", "IsGround", "VerticalSpeed", "ForwardSpeed", "MeleeAttack", "RoomId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.B2C_MissingPlayerEntityBattleMessage), global::Crazy.Common.B2C_MissingPlayerEntityBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2L_CreateRoomReqMessage), global::Crazy.Common.C2L_CreateRoomReqMessage.Parser, new[]{ "RpcId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.L2C_CreateRoomAckMessage), global::Crazy.Common.L2C_CreateRoomAckMessage.Parser, new[]{ "RpcId", "Error", "Message", "RoomId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2L_JoinRoomReqMessage), global::Crazy.Common.C2L_JoinRoomReqMessage.Parser, new[]{ "RpcId", "RoomId" }, null, null, null),
@@ -590,11 +603,11 @@ namespace Crazy.Common {
   /// <summary>
   /////玩家同步自身位置等信息
   /// </summary>
-  public sealed partial class C2S_PlayerSyncEntityMessage : pb::IMessage<C2S_PlayerSyncEntityMessage> {
-    private static readonly pb::MessageParser<C2S_PlayerSyncEntityMessage> _parser = new pb::MessageParser<C2S_PlayerSyncEntityMessage>(() => new C2S_PlayerSyncEntityMessage());
+  public sealed partial class SyncPlayerEntityBattleMessage : pb::IMessage<SyncPlayerEntityBattleMessage> {
+    private static readonly pb::MessageParser<SyncPlayerEntityBattleMessage> _parser = new pb::MessageParser<SyncPlayerEntityBattleMessage>(() => new SyncPlayerEntityBattleMessage());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<C2S_PlayerSyncEntityMessage> Parser { get { return _parser; } }
+    public static pb::MessageParser<SyncPlayerEntityBattleMessage> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -607,29 +620,30 @@ namespace Crazy.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public C2S_PlayerSyncEntityMessage() {
+    public SyncPlayerEntityBattleMessage() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public C2S_PlayerSyncEntityMessage(C2S_PlayerSyncEntityMessage other) : this() {
+    public SyncPlayerEntityBattleMessage(SyncPlayerEntityBattleMessage other) : this() {
       rpcId_ = other.rpcId_;
+      roomId_ = other.roomId_;
       playerId_ = other.playerId_;
+      entityId_ = other.entityId_;
       pos_ = other.pos_ != null ? other.pos_.Clone() : null;
       forward_ = other.forward_ != null ? other.forward_.Clone() : null;
       isGround_ = other.isGround_;
       verticalSpeed_ = other.verticalSpeed_;
       forwardSpeed_ = other.forwardSpeed_;
       meleeAttack_ = other.meleeAttack_;
-      roomId_ = other.roomId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public C2S_PlayerSyncEntityMessage Clone() {
-      return new C2S_PlayerSyncEntityMessage(this);
+    public SyncPlayerEntityBattleMessage Clone() {
+      return new SyncPlayerEntityBattleMessage(this);
     }
 
     /// <summary>Field number for the "RpcId" field.</summary>
@@ -643,14 +657,36 @@ namespace Crazy.Common {
       }
     }
 
+    /// <summary>Field number for the "RoomId" field.</summary>
+    public const int RoomIdFieldNumber = 101;
+    private long roomId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long RoomId {
+      get { return roomId_; }
+      set {
+        roomId_ = value;
+      }
+    }
+
     /// <summary>Field number for the "PlayerId" field.</summary>
-    public const int PlayerIdFieldNumber = 1;
+    public const int PlayerIdFieldNumber = 102;
     private string playerId_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public string PlayerId {
       get { return playerId_; }
       set {
         playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "EntityId" field.</summary>
+    public const int EntityIdFieldNumber = 103;
+    private long entityId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long EntityId {
+      get { return entityId_; }
+      set {
+        entityId_ = value;
       }
     }
 
@@ -720,24 +756,13 @@ namespace Crazy.Common {
       }
     }
 
-    /// <summary>Field number for the "RoomId" field.</summary>
-    public const int RoomIdFieldNumber = 8;
-    private long roomId_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public long RoomId {
-      get { return roomId_; }
-      set {
-        roomId_ = value;
-      }
-    }
-
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as C2S_PlayerSyncEntityMessage);
+      return Equals(other as SyncPlayerEntityBattleMessage);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(C2S_PlayerSyncEntityMessage other) {
+    public bool Equals(SyncPlayerEntityBattleMessage other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -745,14 +770,15 @@ namespace Crazy.Common {
         return true;
       }
       if (RpcId != other.RpcId) return false;
+      if (RoomId != other.RoomId) return false;
       if (PlayerId != other.PlayerId) return false;
+      if (EntityId != other.EntityId) return false;
       if (!object.Equals(Pos, other.Pos)) return false;
       if (!object.Equals(Forward, other.Forward)) return false;
       if (IsGround != other.IsGround) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(VerticalSpeed, other.VerticalSpeed)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ForwardSpeed, other.ForwardSpeed)) return false;
       if (MeleeAttack != other.MeleeAttack) return false;
-      if (RoomId != other.RoomId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -760,14 +786,15 @@ namespace Crazy.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (RoomId != 0L) hash ^= RoomId.GetHashCode();
       if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (EntityId != 0L) hash ^= EntityId.GetHashCode();
       if (pos_ != null) hash ^= Pos.GetHashCode();
       if (forward_ != null) hash ^= Forward.GetHashCode();
       if (IsGround != false) hash ^= IsGround.GetHashCode();
       if (VerticalSpeed != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(VerticalSpeed);
       if (ForwardSpeed != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ForwardSpeed);
       if (MeleeAttack != false) hash ^= MeleeAttack.GetHashCode();
-      if (RoomId != 0L) hash ^= RoomId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -781,10 +808,6 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (PlayerId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(PlayerId);
-      }
       if (pos_ != null) {
         output.WriteRawTag(18);
         output.WriteMessage(Pos);
@@ -809,13 +832,21 @@ namespace Crazy.Common {
         output.WriteRawTag(56);
         output.WriteBool(MeleeAttack);
       }
-      if (RoomId != 0L) {
-        output.WriteRawTag(64);
-        output.WriteInt64(RoomId);
-      }
       if (RpcId != 0) {
         output.WriteRawTag(208, 5);
         output.WriteInt32(RpcId);
+      }
+      if (RoomId != 0L) {
+        output.WriteRawTag(168, 6);
+        output.WriteInt64(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(178, 6);
+        output.WriteString(PlayerId);
+      }
+      if (EntityId != 0L) {
+        output.WriteRawTag(184, 6);
+        output.WriteInt64(EntityId);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -828,8 +859,14 @@ namespace Crazy.Common {
       if (RpcId != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
       }
+      if (RoomId != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
+      }
       if (PlayerId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
+      if (EntityId != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(EntityId);
       }
       if (pos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pos);
@@ -849,9 +886,6 @@ namespace Crazy.Common {
       if (MeleeAttack != false) {
         size += 1 + 1;
       }
-      if (RoomId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
-      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -859,15 +893,21 @@ namespace Crazy.Common {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(C2S_PlayerSyncEntityMessage other) {
+    public void MergeFrom(SyncPlayerEntityBattleMessage other) {
       if (other == null) {
         return;
       }
       if (other.RpcId != 0) {
         RpcId = other.RpcId;
       }
+      if (other.RoomId != 0L) {
+        RoomId = other.RoomId;
+      }
       if (other.PlayerId.Length != 0) {
         PlayerId = other.PlayerId;
+      }
+      if (other.EntityId != 0L) {
+        EntityId = other.EntityId;
       }
       if (other.pos_ != null) {
         if (pos_ == null) {
@@ -893,9 +933,6 @@ namespace Crazy.Common {
       if (other.MeleeAttack != false) {
         MeleeAttack = other.MeleeAttack;
       }
-      if (other.RoomId != 0L) {
-        RoomId = other.RoomId;
-      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -907,10 +944,6 @@ namespace Crazy.Common {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            PlayerId = input.ReadString();
-            break;
-          }
           case 18: {
             if (pos_ == null) {
               pos_ = new global::Crazy.Common.Vector3();
@@ -941,12 +974,570 @@ namespace Crazy.Common {
             MeleeAttack = input.ReadBool();
             break;
           }
-          case 64: {
+          case 720: {
+            RpcId = input.ReadInt32();
+            break;
+          }
+          case 808: {
             RoomId = input.ReadInt64();
+            break;
+          }
+          case 818: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 824: {
+            EntityId = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class SyncChomperEntityPhysicStateBattleMessage : pb::IMessage<SyncChomperEntityPhysicStateBattleMessage> {
+    private static readonly pb::MessageParser<SyncChomperEntityPhysicStateBattleMessage> _parser = new pb::MessageParser<SyncChomperEntityPhysicStateBattleMessage>(() => new SyncChomperEntityPhysicStateBattleMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SyncChomperEntityPhysicStateBattleMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncChomperEntityPhysicStateBattleMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncChomperEntityPhysicStateBattleMessage(SyncChomperEntityPhysicStateBattleMessage other) : this() {
+      rpcId_ = other.rpcId_;
+      roomId_ = other.roomId_;
+      playerId_ = other.playerId_;
+      entityId_ = other.entityId_;
+      enemyType_ = other.enemyType_;
+      pos_ = other.pos_ != null ? other.pos_.Clone() : null;
+      forward_ = other.forward_ != null ? other.forward_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncChomperEntityPhysicStateBattleMessage Clone() {
+      return new SyncChomperEntityPhysicStateBattleMessage(this);
+    }
+
+    /// <summary>Field number for the "RpcId" field.</summary>
+    public const int RpcIdFieldNumber = 90;
+    private int rpcId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RpcId {
+      get { return rpcId_; }
+      set {
+        rpcId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RoomId" field.</summary>
+    public const int RoomIdFieldNumber = 101;
+    private long roomId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long RoomId {
+      get { return roomId_; }
+      set {
+        roomId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 102;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "EntityId" field.</summary>
+    public const int EntityIdFieldNumber = 103;
+    private long entityId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long EntityId {
+      get { return entityId_; }
+      set {
+        entityId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "EnemyType" field.</summary>
+    public const int EnemyTypeFieldNumber = 1;
+    private int enemyType_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int EnemyType {
+      get { return enemyType_; }
+      set {
+        enemyType_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Pos" field.</summary>
+    public const int PosFieldNumber = 2;
+    private global::Crazy.Common.Vector3 pos_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Crazy.Common.Vector3 Pos {
+      get { return pos_; }
+      set {
+        pos_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Forward" field.</summary>
+    public const int ForwardFieldNumber = 3;
+    private global::Crazy.Common.Vector3 forward_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Crazy.Common.Vector3 Forward {
+      get { return forward_; }
+      set {
+        forward_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SyncChomperEntityPhysicStateBattleMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SyncChomperEntityPhysicStateBattleMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RpcId != other.RpcId) return false;
+      if (RoomId != other.RoomId) return false;
+      if (PlayerId != other.PlayerId) return false;
+      if (EntityId != other.EntityId) return false;
+      if (EnemyType != other.EnemyType) return false;
+      if (!object.Equals(Pos, other.Pos)) return false;
+      if (!object.Equals(Forward, other.Forward)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (RoomId != 0L) hash ^= RoomId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (EntityId != 0L) hash ^= EntityId.GetHashCode();
+      if (EnemyType != 0) hash ^= EnemyType.GetHashCode();
+      if (pos_ != null) hash ^= Pos.GetHashCode();
+      if (forward_ != null) hash ^= Forward.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (EnemyType != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(EnemyType);
+      }
+      if (pos_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Pos);
+      }
+      if (forward_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Forward);
+      }
+      if (RpcId != 0) {
+        output.WriteRawTag(208, 5);
+        output.WriteInt32(RpcId);
+      }
+      if (RoomId != 0L) {
+        output.WriteRawTag(168, 6);
+        output.WriteInt64(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(178, 6);
+        output.WriteString(PlayerId);
+      }
+      if (EntityId != 0L) {
+        output.WriteRawTag(184, 6);
+        output.WriteInt64(EntityId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RpcId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (RoomId != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
+      if (EntityId != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(EntityId);
+      }
+      if (EnemyType != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(EnemyType);
+      }
+      if (pos_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pos);
+      }
+      if (forward_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Forward);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SyncChomperEntityPhysicStateBattleMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RpcId != 0) {
+        RpcId = other.RpcId;
+      }
+      if (other.RoomId != 0L) {
+        RoomId = other.RoomId;
+      }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
+      if (other.EntityId != 0L) {
+        EntityId = other.EntityId;
+      }
+      if (other.EnemyType != 0) {
+        EnemyType = other.EnemyType;
+      }
+      if (other.pos_ != null) {
+        if (pos_ == null) {
+          pos_ = new global::Crazy.Common.Vector3();
+        }
+        Pos.MergeFrom(other.Pos);
+      }
+      if (other.forward_ != null) {
+        if (forward_ == null) {
+          forward_ = new global::Crazy.Common.Vector3();
+        }
+        Forward.MergeFrom(other.Forward);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            EnemyType = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            if (pos_ == null) {
+              pos_ = new global::Crazy.Common.Vector3();
+            }
+            input.ReadMessage(pos_);
+            break;
+          }
+          case 26: {
+            if (forward_ == null) {
+              forward_ = new global::Crazy.Common.Vector3();
+            }
+            input.ReadMessage(forward_);
             break;
           }
           case 720: {
             RpcId = input.ReadInt32();
+            break;
+          }
+          case 808: {
+            RoomId = input.ReadInt64();
+            break;
+          }
+          case 818: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 824: {
+            EntityId = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class SyncStartLevelBattleMessage : pb::IMessage<SyncStartLevelBattleMessage> {
+    private static readonly pb::MessageParser<SyncStartLevelBattleMessage> _parser = new pb::MessageParser<SyncStartLevelBattleMessage>(() => new SyncStartLevelBattleMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SyncStartLevelBattleMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncStartLevelBattleMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncStartLevelBattleMessage(SyncStartLevelBattleMessage other) : this() {
+      rpcId_ = other.rpcId_;
+      roomId_ = other.roomId_;
+      playerId_ = other.playerId_;
+      entityId_ = other.entityId_;
+      levelId_ = other.levelId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncStartLevelBattleMessage Clone() {
+      return new SyncStartLevelBattleMessage(this);
+    }
+
+    /// <summary>Field number for the "RpcId" field.</summary>
+    public const int RpcIdFieldNumber = 90;
+    private int rpcId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RpcId {
+      get { return rpcId_; }
+      set {
+        rpcId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RoomId" field.</summary>
+    public const int RoomIdFieldNumber = 101;
+    private long roomId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long RoomId {
+      get { return roomId_; }
+      set {
+        roomId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 102;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "EntityId" field.</summary>
+    public const int EntityIdFieldNumber = 103;
+    private long entityId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long EntityId {
+      get { return entityId_; }
+      set {
+        entityId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "LevelId" field.</summary>
+    public const int LevelIdFieldNumber = 1;
+    private int levelId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int LevelId {
+      get { return levelId_; }
+      set {
+        levelId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SyncStartLevelBattleMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SyncStartLevelBattleMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RpcId != other.RpcId) return false;
+      if (RoomId != other.RoomId) return false;
+      if (PlayerId != other.PlayerId) return false;
+      if (EntityId != other.EntityId) return false;
+      if (LevelId != other.LevelId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (RoomId != 0L) hash ^= RoomId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (EntityId != 0L) hash ^= EntityId.GetHashCode();
+      if (LevelId != 0) hash ^= LevelId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (LevelId != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(LevelId);
+      }
+      if (RpcId != 0) {
+        output.WriteRawTag(208, 5);
+        output.WriteInt32(RpcId);
+      }
+      if (RoomId != 0L) {
+        output.WriteRawTag(168, 6);
+        output.WriteInt64(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(178, 6);
+        output.WriteString(PlayerId);
+      }
+      if (EntityId != 0L) {
+        output.WriteRawTag(184, 6);
+        output.WriteInt64(EntityId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RpcId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (RoomId != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
+      if (EntityId != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(EntityId);
+      }
+      if (LevelId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(LevelId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SyncStartLevelBattleMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RpcId != 0) {
+        RpcId = other.RpcId;
+      }
+      if (other.RoomId != 0L) {
+        RoomId = other.RoomId;
+      }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
+      if (other.EntityId != 0L) {
+        EntityId = other.EntityId;
+      }
+      if (other.LevelId != 0) {
+        LevelId = other.LevelId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            LevelId = input.ReadInt32();
+            break;
+          }
+          case 720: {
+            RpcId = input.ReadInt32();
+            break;
+          }
+          case 808: {
+            RoomId = input.ReadInt64();
+            break;
+          }
+          case 818: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 824: {
+            EntityId = input.ReadInt64();
             break;
           }
         }
@@ -963,7 +1554,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1120,7 +1711,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1333,7 +1924,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1690,6 +2281,191 @@ namespace Crazy.Common {
 
   }
 
+  public sealed partial class B2C_MissingPlayerEntityBattleMessage : pb::IMessage<B2C_MissingPlayerEntityBattleMessage> {
+    private static readonly pb::MessageParser<B2C_MissingPlayerEntityBattleMessage> _parser = new pb::MessageParser<B2C_MissingPlayerEntityBattleMessage>(() => new B2C_MissingPlayerEntityBattleMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<B2C_MissingPlayerEntityBattleMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public B2C_MissingPlayerEntityBattleMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public B2C_MissingPlayerEntityBattleMessage(B2C_MissingPlayerEntityBattleMessage other) : this() {
+      rpcId_ = other.rpcId_;
+      roomId_ = other.roomId_;
+      playerId_ = other.playerId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public B2C_MissingPlayerEntityBattleMessage Clone() {
+      return new B2C_MissingPlayerEntityBattleMessage(this);
+    }
+
+    /// <summary>Field number for the "RpcId" field.</summary>
+    public const int RpcIdFieldNumber = 90;
+    private int rpcId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RpcId {
+      get { return rpcId_; }
+      set {
+        rpcId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RoomId" field.</summary>
+    public const int RoomIdFieldNumber = 1;
+    private long roomId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long RoomId {
+      get { return roomId_; }
+      set {
+        roomId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 2;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as B2C_MissingPlayerEntityBattleMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(B2C_MissingPlayerEntityBattleMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RpcId != other.RpcId) return false;
+      if (RoomId != other.RoomId) return false;
+      if (PlayerId != other.PlayerId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (RoomId != 0L) hash ^= RoomId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (RoomId != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PlayerId);
+      }
+      if (RpcId != 0) {
+        output.WriteRawTag(208, 5);
+        output.WriteInt32(RpcId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RpcId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (RoomId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(B2C_MissingPlayerEntityBattleMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RpcId != 0) {
+        RpcId = other.RpcId;
+      }
+      if (other.RoomId != 0L) {
+        RoomId = other.RoomId;
+      }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            RoomId = input.ReadInt64();
+            break;
+          }
+          case 18: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 720: {
+            RpcId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class C2L_CreateRoomReqMessage : pb::IMessage<C2L_CreateRoomReqMessage> {
     private static readonly pb::MessageParser<C2L_CreateRoomReqMessage> _parser = new pb::MessageParser<C2L_CreateRoomReqMessage>(() => new C2L_CreateRoomReqMessage());
     private pb::UnknownFieldSet _unknownFields;
@@ -1698,7 +2474,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1827,7 +2603,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2040,7 +2816,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2197,7 +2973,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2410,7 +3186,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2567,7 +3343,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2786,7 +3562,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2915,7 +3691,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3120,7 +3896,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

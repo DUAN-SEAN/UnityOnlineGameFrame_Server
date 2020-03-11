@@ -21,6 +21,7 @@ namespace Crazy.ServerBase
         public const Int32 SystemSendNetMessage = 6;
         //从1002开始由逻辑业务控制
 
+        public const Int32 NetClientDisConnectMessageDef = 1001;
 
     }
 

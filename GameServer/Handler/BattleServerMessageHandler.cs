@@ -8,16 +8,15 @@ using GameServer.System;
 
 namespace GameServer.Handler
 {
-    [MessageHandler]
-    public class C2S_PlayerSyncEntityMessageHandler:AMHandler<C2S_PlayerSyncEntityMessage>
-    {
-        protected override void Run(ISession playerContext, C2S_PlayerSyncEntityMessage message)
-        {
-            //流入BattleSystem
-            GameServer.Instance.GetSystem<BattleSystem>().PostLocalMessage(new PlayerSyncEntityBattleSystemMessage
-                {PlayerSyncEntityMessage = message});
-        }
-    }
+    //[MessageHandler]
+    //public class C2S_PlayerSyncEntityMessageHandler:AMHandler<C2S_PlayerSyncEntityMessage>
+    //{
+    //    protected override void Run(ISession playerContext, C2S_PlayerSyncEntityMessage message)
+    //    {
+    //        //流入BattleSystem
+           
+    //    }
+    //}
     [MessageHandler]
     public class C2B_EnterClubBattleMessageHandler:AMRpcHandler<C2B_EnterClubBattleReqMessage,B2C_EnterClubBattleAckMessage>
     {
@@ -32,4 +31,5 @@ namespace GameServer.Handler
             reply(response);
         }
     }
+
 }

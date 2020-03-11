@@ -9,7 +9,7 @@ namespace GameServer
     public class BattleSystemLocalMessageIDDef
     {
         
-         public const Int32 PlayerSyncEntityBattleSystemMessageID = 1;
+         public const Int32 SyncMsgBattleSystemMessageID = 2001;
         
     }
 }

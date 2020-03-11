@@ -10,6 +10,9 @@ using NLog.Fluent;
 
 namespace GameServer.System
 {
+    /// <summary>
+    /// 大厅系统，将来作为大厅服务器的一部分
+    /// </summary>
     public class LobbySystem:BaseSystem
     {
         public override Task OnMessage(ILocalMessage msg)
@@ -19,10 +22,10 @@ namespace GameServer.System
             {
                 case LobbySystemLocalMessageIDDef.CreateRoomReqLocalMessageID:
                     OnCreateRoom((msg as CreateRoomReqLocalMessage).PlayerId);
-
-
                     break;
-
+                case ServerBaseLocalMesssageIDDef.NetClientDisConnectMessageDef:
+                    OnPlayerDisConnect((msg as NetClientDisConnectMessage).PlayerContextName);
+                    break;
                 default:
                     break;
             }
@@ -42,9 +45,27 @@ namespace GameServer.System
 
         private void TickRoomState()
         {
-            foreach (var idAndItem in m_RoomItemDic)
+            var roomItemList = m_RoomItemDic.Values.ToList();
+            for (int i = 0; i < roomItemList.Count; i++)
             {
-                
+                var roomItem = roomItemList[i];
+                if (roomItem.Players.Count < 1)
+                {
+                    m_RoomItemDic.Remove(roomItem.RoomId);
+                }
+            }
+            
+        }
+
+
+        private void OnPlayerDisConnect(string playerId)
+        {
+            foreach (var roomItem in m_RoomItemDic.Values)
+            {
+                if (roomItem.Players.Contains(playerId))
+                {
+                    roomItem.Players.Remove(playerId);
+                }
             }
         }
         /// <summary>
@@ -182,7 +203,7 @@ namespace GameServer.System
 
         private Dictionary<long, RoomItem> m_RoomItemDic = new Dictionary<long, RoomItem>();
 
-        private static long RoomIDFactory = 0;
+        private static long RoomIDFactory = 1;
 
 
         

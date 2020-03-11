@@ -9,6 +9,9 @@ using Crazy.ServerBase;
 
 namespace GameServer.System
 {
+    /// <summary>
+    /// 战斗系统，将来分布式作为战斗服务器的必备部分
+    /// </summary>
     public class BattleSystem:BaseSystem
     {
         public override void Start()
@@ -32,12 +35,12 @@ namespace GameServer.System
 
             switch (msg.MessageId)
             {
-                case BattleSystemLocalMessageIDDef.PlayerSyncEntityBattleSystemMessageID:
-                    OnSyncPlayerEntity((msg as PlayerSyncEntityBattleSystemMessage)?.PlayerSyncEntityMessage);
-                    
-                    
+                case BattleSystemLocalMessageIDDef.SyncMsgBattleSystemMessageID:
+                    OnSyncPlayerEntity((msg as SyncBattleMsgSystemMessage)?.PlayerSyncEntityMessage);
                     break;
-
+                case ServerBaseLocalMesssageIDDef.NetClientDisConnectMessageDef:
+                    OnPlayerDisConnect((msg as NetClientDisConnectMessage).PlayerContextName);
+                    break;
                 default:
                     break;
             }
@@ -47,12 +50,44 @@ namespace GameServer.System
 
         }
         /// <summary>
+        /// 当玩家断开连接事件发生时
+        /// </summary>
+        /// <param name="playerId"></param>
+        private void OnPlayerDisConnect(string playerId)
+        {
+            foreach (var IDandBattleEntity in m_BattleEntityDic)
+            {
+                long roomId = IDandBattleEntity.Key;
+                var battleEntity = IDandBattleEntity.Value;
+                if (battleEntity.Roomer == playerId)
+                {
+                    //todo 这里要直接通告所有玩家断开连接,目前逻辑暂时先不写
+                }
+
+
+                if (battleEntity.Players.Contains(playerId))
+                {
+                    battleEntity.Players.Remove(playerId);
+                    BroadcastBattleEntity(
+                        new B2C_MissingPlayerEntityBattleMessage {PlayerId = playerId, RoomId = roomId },
+                        roomId);
+                }
+            }
+        }
+
+        /// <summary>
         /// 处理玩家同步过来的玩家实体位置
         /// </summary>
         /// <param name="msg"></param>
-        private void OnSyncPlayerEntity(C2S_PlayerSyncEntityMessage msg)
+        private void OnSyncPlayerEntity(ISyncBattleMessage msg)
         {
             if (msg == null) return;
+            if (msg.GetType() == typeof(SyncStartLevelBattleMessage))
+            {
+                Log.Info("ISyncBattleMessage::Type = " + msg.GetType());
+                Log.Msg(msg);
+            }
+
             BroadcastBattleEntity(msg,msg.RoomId);
 
         }
@@ -91,4 +126,5 @@ namespace GameServer.System
 
         public List<string> Players = new List<string>();
     }
+
 }

@@ -40,4 +40,11 @@ namespace Crazy.ServerBase
         /// </summary>
         public IMessage Message;
     }
+
+    public class NetClientDisConnectMessage : ILocalMessage
+    {
+        public int MessageId { get => ServerBaseLocalMesssageIDDef.NetClientDisConnectMessageDef; }
+
+        public string PlayerContextName;
+    }
 }

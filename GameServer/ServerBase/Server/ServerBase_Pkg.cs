@@ -164,7 +164,7 @@ namespace Crazy.ServerBase
             catch (Exception)
             {
                 Log.Error($"WRONG MSG ID ==============================={msgId}");
-                throw;
+                //throw;
             }
             //Log.Info($"{msgType} Count = " + msgFullLength);
             // 获取协议内容的长度

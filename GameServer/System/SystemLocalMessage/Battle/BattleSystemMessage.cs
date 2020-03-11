@@ -8,11 +8,11 @@ using Crazy.NetSharp;
 
 namespace GameServer
 {
-    public class PlayerSyncEntityBattleSystemMessage : ILocalMessage
+    public class SyncBattleMsgSystemMessage : ILocalMessage
     {
-        public int MessageId { get=> BattleSystemLocalMessageIDDef.PlayerSyncEntityBattleSystemMessageID; }
+        public int MessageId { get=> BattleSystemLocalMessageIDDef.SyncMsgBattleSystemMessageID; }
 
-        public C2S_PlayerSyncEntityMessage PlayerSyncEntityMessage;
+        public ISyncBattleMessage PlayerSyncEntityMessage;
         
 
     }

@@ -8,6 +8,6 @@ namespace GameServer.System.SystemLocalMessage.Lobby
 {
     public class LobbySystemLocalMessageIDDef
     {
-        public const int CreateRoomReqLocalMessageID = 1;
+        public const int CreateRoomReqLocalMessageID = 3001;
     }
 }

@@ -20,10 +20,12 @@ message Vector3
 
 }
 ////玩家同步自身位置等信息
-message C2S_PlayerSyncEntityMessage // IMessage
+message SyncPlayerEntityBattleMessage // ISyncBattleMessage
 {
 	int32 RpcId = 90;
-	string PlayerId = 1;
+	int64 RoomId = 101;
+	string PlayerId = 102;
+	int64 EntityId = 103;
 
 	Vector3 Pos = 2;
 	Vector3 Forward = 3;
@@ -35,11 +37,27 @@ message C2S_PlayerSyncEntityMessage // IMessage
 	bool MeleeAttack = 7;
 
 
-	int64 RoomId = 8;
 	
 	
 }
-
+message SyncChomperEntityPhysicStateBattleMessage // ISyncBattleMessage
+{
+	int32 RpcId = 90;
+	int64 RoomId = 101;
+	string PlayerId = 102;
+	int64 EntityId = 103;
+	int32 EnemyType =1;
+	Vector3 Pos = 2;
+	Vector3 Forward = 3;
+}
+message SyncStartLevelBattleMessage // ISyncBattleMessage
+{
+	int32 RpcId = 90;
+	int64 RoomId = 101;
+	string PlayerId = 102;
+	int64 EntityId = 103;
+	int32 LevelId = 1;
+}
 message C2B_EnterClubBattleReqMessage // IRequest
 {
 	int32 RpcId = 90;
@@ -69,9 +87,16 @@ message B2C_InitPlayerEntityBattleMessage // IMessage
 	bool MeleeAttack = 7;
 
 	int64 RoomId = 8;
-	
-	
+
 }
+message B2C_MissingPlayerEntityBattleMessage // IMessage
+{
+	int32 RpcId = 90;
+	int64 RoomId = 1;
+	string PlayerId = 2;
+}
+
+
 
 message C2L_CreateRoomReqMessage // IRequest
 {
