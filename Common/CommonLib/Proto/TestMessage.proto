@@ -35,7 +35,7 @@ message SyncPlayerEntityBattleMessage // ISyncBattleMessage
 	float ForwardSpeed = 6;
 
 	bool MeleeAttack = 7;
-
+	bool InputDetected = 8;
 
 	
 	
@@ -49,6 +49,30 @@ message SyncChomperEntityPhysicStateBattleMessage // ISyncBattleMessage
 	int32 EnemyType =1;
 	Vector3 Pos = 2;
 	Vector3 Forward = 3;
+}
+message SyncChomperEntityAnimationStateBattleMessage // ISyncBattleMessage
+{
+	int32 RpcId = 90;
+	int64 RoomId = 101;
+	string PlayerId = 102;
+	int64 EntityId = 103;
+	bool AttackTrigger = 1;
+	bool InPursuit = 2;
+	bool IsGrounded = 3;
+	bool NearBase = 4;
+	bool SpottedTrigger = 5;
+	float IdleState = 6;
+}
+message SyncEnemyEntityAnimationStateBattleMessage // ISyncBattleMessage
+{
+	int32 RpcId = 90;
+	int64 RoomId = 101;
+	string PlayerId = 102;
+	int64 EntityId = 103;
+	bool HitTrigger = 1;
+	float VerticalHitDot = 2;
+	float HorizontalHitDot = 3;
+	bool ThrownTrigger = 4;
 }
 message SyncStartLevelBattleMessage // ISyncBattleMessage
 {

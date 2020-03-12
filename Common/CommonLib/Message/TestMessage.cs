@@ -28,56 +28,68 @@ namespace Crazy.Common {
             "TWVzc2FnZRINCgVScGNJZBhaIAEoBRIMCgREYXRhGAEgASgJIjsKGFMyQ19B",
             "bGxvY1BsYXllcklkTWVzc2FnZRINCgVScGNJZBhaIAEoBRIQCghQbGF5ZXJJ",
             "ZBgBIAEoCSIqCgdWZWN0b3IzEgkKAVgYASABKAISCQoBWRgCIAEoAhIJCgFa",
-            "GAMgASgCIoICCh1TeW5jUGxheWVyRW50aXR5QmF0dGxlTWVzc2FnZRINCgVS",
+            "GAMgASgCIpkCCh1TeW5jUGxheWVyRW50aXR5QmF0dGxlTWVzc2FnZRINCgVS",
             "cGNJZBhaIAEoBRIOCgZSb29tSWQYZSABKAMSEAoIUGxheWVySWQYZiABKAkS",
             "EAoIRW50aXR5SWQYZyABKAMSIgoDUG9zGAIgASgLMhUuQ3JhenkuQ29tbW9u",
             "LlZlY3RvcjMSJgoHRm9yd2FyZBgDIAEoCzIVLkNyYXp5LkNvbW1vbi5WZWN0",
             "b3IzEhAKCElzR3JvdW5kGAQgASgIEhUKDVZlcnRpY2FsU3BlZWQYBSABKAIS",
-            "FAoMRm9yd2FyZFNwZWVkGAYgASgCEhMKC01lbGVlQXR0YWNrGAcgASgIIs0B",
-            "CilTeW5jQ2hvbXBlckVudGl0eVBoeXNpY1N0YXRlQmF0dGxlTWVzc2FnZRIN",
-            "CgVScGNJZBhaIAEoBRIOCgZSb29tSWQYZSABKAMSEAoIUGxheWVySWQYZiAB",
-            "KAkSEAoIRW50aXR5SWQYZyABKAMSEQoJRW5lbXlUeXBlGAEgASgFEiIKA1Bv",
-            "cxgCIAEoCzIVLkNyYXp5LkNvbW1vbi5WZWN0b3IzEiYKB0ZvcndhcmQYAyAB",
-            "KAsyFS5DcmF6eS5Db21tb24uVmVjdG9yMyJxChtTeW5jU3RhcnRMZXZlbEJh",
-            "dHRsZU1lc3NhZ2USDQoFUnBjSWQYWiABKAUSDgoGUm9vbUlkGGUgASgDEhAK",
-            "CFBsYXllcklkGGYgASgJEhAKCEVudGl0eUlkGGcgASgDEg8KB0xldmVsSWQY",
-            "ASABKAUiPgodQzJCX0VudGVyQ2x1YkJhdHRsZVJlcU1lc3NhZ2USDQoFUnBj",
-            "SWQYWiABKAUSDgoGUm9vbUlkGAEgASgDIl4KHUIyQ19FbnRlckNsdWJCYXR0",
-            "bGVBY2tNZXNzYWdlEg0KBVJwY0lkGFogASgFEg0KBUVycm9yGFsgASgFEg8K",
-            "B01lc3NhZ2UYXCABKAkSDgoGUm9vbUlkGAEgASgDIvQBCiFCMkNfSW5pdFBs",
-            "YXllckVudGl0eUJhdHRsZU1lc3NhZ2USDQoFUnBjSWQYWiABKAUSEAoIUGxh",
-            "eWVySWQYASABKAkSIgoDUG9zGAIgASgLMhUuQ3JhenkuQ29tbW9uLlZlY3Rv",
-            "cjMSJgoHRm9yd2FyZBgDIAEoCzIVLkNyYXp5LkNvbW1vbi5WZWN0b3IzEhAK",
-            "CElzR3JvdW5kGAQgASgIEhUKDVZlcnRpY2FsU3BlZWQYBSABKAISFAoMRm9y",
-            "d2FyZFNwZWVkGAYgASgCEhMKC01lbGVlQXR0YWNrGAcgASgIEg4KBlJvb21J",
-            "ZBgIIAEoAyJXCiRCMkNfTWlzc2luZ1BsYXllckVudGl0eUJhdHRsZU1lc3Nh",
-            "Z2USDQoFUnBjSWQYWiABKAUSDgoGUm9vbUlkGAEgASgDEhAKCFBsYXllcklk",
-            "GAIgASgJIikKGEMyTF9DcmVhdGVSb29tUmVxTWVzc2FnZRINCgVScGNJZBha",
-            "IAEoBSJZChhMMkNfQ3JlYXRlUm9vbUFja01lc3NhZ2USDQoFUnBjSWQYWiAB",
-            "KAUSDQoFRXJyb3IYWyABKAUSDwoHTWVzc2FnZRhcIAEoCRIOCgZSb29tSWQY",
-            "ASABKAMiNwoWQzJMX0pvaW5Sb29tUmVxTWVzc2FnZRINCgVScGNJZBhaIAEo",
-            "BRIOCgZSb29tSWQYASABKAMiVwoWTDJDX0pvaW5Sb29tQWNrTWVzc2FnZRIN",
-            "CgVScGNJZBhaIAEoBRINCgVFcnJvchhbIAEoBRIPCgdNZXNzYWdlGFwgASgJ",
-            "Eg4KBlJvb21JZBgBIAEoAyI6ChlDMkxfR2V0Um9vbUluZm9SZXFNZXNzYWdl",
-            "Eg0KBVJwY0lkGFogASgFEg4KBlJvb21JZBgBIAEoAyJ7ChlMMkNfR2V0Um9v",
-            "bUluZm9BY2tNZXNzYWdlEg0KBVJwY0lkGFogASgFEg0KBUVycm9yGFsgASgF",
-            "Eg8KB01lc3NhZ2UYXCABKAkSLwoIUm9vbUluZm8YASABKAsyHS5DcmF6eS5D",
-            "b21tb24uUm9vbUluZm9NZXNzYWdlIi4KHUMyTF9HZXRSb29tTGlzdEluZm9S",
-            "ZXFNZXNzYWdlEg0KBVJwY0lkGFogASgFIoABCh1MMkNfR2V0Um9vbUxpc3RJ",
-            "bmZvQWNrTWVzc2FnZRINCgVScGNJZBhaIAEoBRINCgVFcnJvchhbIAEoBRIP",
-            "CgdNZXNzYWdlGFwgASgJEjAKCVJvb21JbmZvcxgBIAMoCzIdLkNyYXp5LkNv",
-            "bW1vbi5Sb29tSW5mb01lc3NhZ2UifwoPUm9vbUluZm9NZXNzYWdlEg4KBlJv",
-            "b21JZBgBIAEoAxIOCgZSb29tZXIYAiABKAkSEAoIUm9vbU5hbWUYAyABKAkS",
-            "EQoJUm9vbVN0YXRlGAQgASgFEhQKDFJvb21DYXBhY2l0eRgFIAEoBRIRCglQ",
-            "bGF5ZXJJZHMYBiADKAliBnByb3RvMw=="));
+            "FAoMRm9yd2FyZFNwZWVkGAYgASgCEhMKC01lbGVlQXR0YWNrGAcgASgIEhUK",
+            "DUlucHV0RGV0ZWN0ZWQYCCABKAgizQEKKVN5bmNDaG9tcGVyRW50aXR5UGh5",
+            "c2ljU3RhdGVCYXR0bGVNZXNzYWdlEg0KBVJwY0lkGFogASgFEg4KBlJvb21J",
+            "ZBhlIAEoAxIQCghQbGF5ZXJJZBhmIAEoCRIQCghFbnRpdHlJZBhnIAEoAxIR",
+            "CglFbmVteVR5cGUYASABKAUSIgoDUG9zGAIgASgLMhUuQ3JhenkuQ29tbW9u",
+            "LlZlY3RvcjMSJgoHRm9yd2FyZBgDIAEoCzIVLkNyYXp5LkNvbW1vbi5WZWN0",
+            "b3IzIuwBCixTeW5jQ2hvbXBlckVudGl0eUFuaW1hdGlvblN0YXRlQmF0dGxl",
+            "TWVzc2FnZRINCgVScGNJZBhaIAEoBRIOCgZSb29tSWQYZSABKAMSEAoIUGxh",
+            "eWVySWQYZiABKAkSEAoIRW50aXR5SWQYZyABKAMSFQoNQXR0YWNrVHJpZ2dl",
+            "chgBIAEoCBIRCglJblB1cnN1aXQYAiABKAgSEgoKSXNHcm91bmRlZBgDIAEo",
+            "CBIQCghOZWFyQmFzZRgEIAEoCBIWCg5TcG90dGVkVHJpZ2dlchgFIAEoCBIR",
+            "CglJZGxlU3RhdGUYBiABKAIizAEKKlN5bmNFbmVteUVudGl0eUFuaW1hdGlv",
+            "blN0YXRlQmF0dGxlTWVzc2FnZRINCgVScGNJZBhaIAEoBRIOCgZSb29tSWQY",
+            "ZSABKAMSEAoIUGxheWVySWQYZiABKAkSEAoIRW50aXR5SWQYZyABKAMSEgoK",
+            "SGl0VHJpZ2dlchgBIAEoCBIWCg5WZXJ0aWNhbEhpdERvdBgCIAEoAhIYChBI",
+            "b3Jpem9udGFsSGl0RG90GAMgASgCEhUKDVRocm93blRyaWdnZXIYBCABKAgi",
+            "cQobU3luY1N0YXJ0TGV2ZWxCYXR0bGVNZXNzYWdlEg0KBVJwY0lkGFogASgF",
+            "Eg4KBlJvb21JZBhlIAEoAxIQCghQbGF5ZXJJZBhmIAEoCRIQCghFbnRpdHlJ",
+            "ZBhnIAEoAxIPCgdMZXZlbElkGAEgASgFIj4KHUMyQl9FbnRlckNsdWJCYXR0",
+            "bGVSZXFNZXNzYWdlEg0KBVJwY0lkGFogASgFEg4KBlJvb21JZBgBIAEoAyJe",
+            "Ch1CMkNfRW50ZXJDbHViQmF0dGxlQWNrTWVzc2FnZRINCgVScGNJZBhaIAEo",
+            "BRINCgVFcnJvchhbIAEoBRIPCgdNZXNzYWdlGFwgASgJEg4KBlJvb21JZBgB",
+            "IAEoAyL0AQohQjJDX0luaXRQbGF5ZXJFbnRpdHlCYXR0bGVNZXNzYWdlEg0K",
+            "BVJwY0lkGFogASgFEhAKCFBsYXllcklkGAEgASgJEiIKA1BvcxgCIAEoCzIV",
+            "LkNyYXp5LkNvbW1vbi5WZWN0b3IzEiYKB0ZvcndhcmQYAyABKAsyFS5DcmF6",
+            "eS5Db21tb24uVmVjdG9yMxIQCghJc0dyb3VuZBgEIAEoCBIVCg1WZXJ0aWNh",
+            "bFNwZWVkGAUgASgCEhQKDEZvcndhcmRTcGVlZBgGIAEoAhITCgtNZWxlZUF0",
+            "dGFjaxgHIAEoCBIOCgZSb29tSWQYCCABKAMiVwokQjJDX01pc3NpbmdQbGF5",
+            "ZXJFbnRpdHlCYXR0bGVNZXNzYWdlEg0KBVJwY0lkGFogASgFEg4KBlJvb21J",
+            "ZBgBIAEoAxIQCghQbGF5ZXJJZBgCIAEoCSIpChhDMkxfQ3JlYXRlUm9vbVJl",
+            "cU1lc3NhZ2USDQoFUnBjSWQYWiABKAUiWQoYTDJDX0NyZWF0ZVJvb21BY2tN",
+            "ZXNzYWdlEg0KBVJwY0lkGFogASgFEg0KBUVycm9yGFsgASgFEg8KB01lc3Nh",
+            "Z2UYXCABKAkSDgoGUm9vbUlkGAEgASgDIjcKFkMyTF9Kb2luUm9vbVJlcU1l",
+            "c3NhZ2USDQoFUnBjSWQYWiABKAUSDgoGUm9vbUlkGAEgASgDIlcKFkwyQ19K",
+            "b2luUm9vbUFja01lc3NhZ2USDQoFUnBjSWQYWiABKAUSDQoFRXJyb3IYWyAB",
+            "KAUSDwoHTWVzc2FnZRhcIAEoCRIOCgZSb29tSWQYASABKAMiOgoZQzJMX0dl",
+            "dFJvb21JbmZvUmVxTWVzc2FnZRINCgVScGNJZBhaIAEoBRIOCgZSb29tSWQY",
+            "ASABKAMiewoZTDJDX0dldFJvb21JbmZvQWNrTWVzc2FnZRINCgVScGNJZBha",
+            "IAEoBRINCgVFcnJvchhbIAEoBRIPCgdNZXNzYWdlGFwgASgJEi8KCFJvb21J",
+            "bmZvGAEgASgLMh0uQ3JhenkuQ29tbW9uLlJvb21JbmZvTWVzc2FnZSIuCh1D",
+            "MkxfR2V0Um9vbUxpc3RJbmZvUmVxTWVzc2FnZRINCgVScGNJZBhaIAEoBSKA",
+            "AQodTDJDX0dldFJvb21MaXN0SW5mb0Fja01lc3NhZ2USDQoFUnBjSWQYWiAB",
+            "KAUSDQoFRXJyb3IYWyABKAUSDwoHTWVzc2FnZRhcIAEoCRIwCglSb29tSW5m",
+            "b3MYASADKAsyHS5DcmF6eS5Db21tb24uUm9vbUluZm9NZXNzYWdlIn8KD1Jv",
+            "b21JbmZvTWVzc2FnZRIOCgZSb29tSWQYASABKAMSDgoGUm9vbWVyGAIgASgJ",
+            "EhAKCFJvb21OYW1lGAMgASgJEhEKCVJvb21TdGF0ZRgEIAEoBRIUCgxSb29t",
+            "Q2FwYWNpdHkYBSABKAUSEQoJUGxheWVySWRzGAYgAygJYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2S_TestMessage), global::Crazy.Common.C2S_TestMessage.Parser, new[]{ "RpcId", "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.S2C_AllocPlayerIdMessage), global::Crazy.Common.S2C_AllocPlayerIdMessage.Parser, new[]{ "RpcId", "PlayerId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.Vector3), global::Crazy.Common.Vector3.Parser, new[]{ "X", "Y", "Z" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncPlayerEntityBattleMessage), global::Crazy.Common.SyncPlayerEntityBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "Pos", "Forward", "IsGround", "VerticalSpeed", "ForwardSpeed", "MeleeAttack" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncPlayerEntityBattleMessage), global::Crazy.Common.SyncPlayerEntityBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "Pos", "Forward", "IsGround", "VerticalSpeed", "ForwardSpeed", "MeleeAttack", "InputDetected" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncChomperEntityPhysicStateBattleMessage), global::Crazy.Common.SyncChomperEntityPhysicStateBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "EnemyType", "Pos", "Forward" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncChomperEntityAnimationStateBattleMessage), global::Crazy.Common.SyncChomperEntityAnimationStateBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "AttackTrigger", "InPursuit", "IsGrounded", "NearBase", "SpottedTrigger", "IdleState" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncEnemyEntityAnimationStateBattleMessage), global::Crazy.Common.SyncEnemyEntityAnimationStateBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "HitTrigger", "VerticalHitDot", "HorizontalHitDot", "ThrownTrigger" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncStartLevelBattleMessage), global::Crazy.Common.SyncStartLevelBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "LevelId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2B_EnterClubBattleReqMessage), global::Crazy.Common.C2B_EnterClubBattleReqMessage.Parser, new[]{ "RpcId", "RoomId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.B2C_EnterClubBattleAckMessage), global::Crazy.Common.B2C_EnterClubBattleAckMessage.Parser, new[]{ "RpcId", "Error", "Message", "RoomId" }, null, null, null),
@@ -638,6 +650,7 @@ namespace Crazy.Common {
       verticalSpeed_ = other.verticalSpeed_;
       forwardSpeed_ = other.forwardSpeed_;
       meleeAttack_ = other.meleeAttack_;
+      inputDetected_ = other.inputDetected_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -756,6 +769,17 @@ namespace Crazy.Common {
       }
     }
 
+    /// <summary>Field number for the "InputDetected" field.</summary>
+    public const int InputDetectedFieldNumber = 8;
+    private bool inputDetected_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool InputDetected {
+      get { return inputDetected_; }
+      set {
+        inputDetected_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as SyncPlayerEntityBattleMessage);
@@ -779,6 +803,7 @@ namespace Crazy.Common {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(VerticalSpeed, other.VerticalSpeed)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ForwardSpeed, other.ForwardSpeed)) return false;
       if (MeleeAttack != other.MeleeAttack) return false;
+      if (InputDetected != other.InputDetected) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -795,6 +820,7 @@ namespace Crazy.Common {
       if (VerticalSpeed != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(VerticalSpeed);
       if (ForwardSpeed != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ForwardSpeed);
       if (MeleeAttack != false) hash ^= MeleeAttack.GetHashCode();
+      if (InputDetected != false) hash ^= InputDetected.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -831,6 +857,10 @@ namespace Crazy.Common {
       if (MeleeAttack != false) {
         output.WriteRawTag(56);
         output.WriteBool(MeleeAttack);
+      }
+      if (InputDetected != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(InputDetected);
       }
       if (RpcId != 0) {
         output.WriteRawTag(208, 5);
@@ -886,6 +916,9 @@ namespace Crazy.Common {
       if (MeleeAttack != false) {
         size += 1 + 1;
       }
+      if (InputDetected != false) {
+        size += 1 + 1;
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -933,6 +966,9 @@ namespace Crazy.Common {
       if (other.MeleeAttack != false) {
         MeleeAttack = other.MeleeAttack;
       }
+      if (other.InputDetected != false) {
+        InputDetected = other.InputDetected;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -972,6 +1008,10 @@ namespace Crazy.Common {
           }
           case 56: {
             MeleeAttack = input.ReadBool();
+            break;
+          }
+          case 64: {
+            InputDetected = input.ReadBool();
             break;
           }
           case 720: {
@@ -1305,6 +1345,712 @@ namespace Crazy.Common {
 
   }
 
+  public sealed partial class SyncChomperEntityAnimationStateBattleMessage : pb::IMessage<SyncChomperEntityAnimationStateBattleMessage> {
+    private static readonly pb::MessageParser<SyncChomperEntityAnimationStateBattleMessage> _parser = new pb::MessageParser<SyncChomperEntityAnimationStateBattleMessage>(() => new SyncChomperEntityAnimationStateBattleMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SyncChomperEntityAnimationStateBattleMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[5]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncChomperEntityAnimationStateBattleMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncChomperEntityAnimationStateBattleMessage(SyncChomperEntityAnimationStateBattleMessage other) : this() {
+      rpcId_ = other.rpcId_;
+      roomId_ = other.roomId_;
+      playerId_ = other.playerId_;
+      entityId_ = other.entityId_;
+      attackTrigger_ = other.attackTrigger_;
+      inPursuit_ = other.inPursuit_;
+      isGrounded_ = other.isGrounded_;
+      nearBase_ = other.nearBase_;
+      spottedTrigger_ = other.spottedTrigger_;
+      idleState_ = other.idleState_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncChomperEntityAnimationStateBattleMessage Clone() {
+      return new SyncChomperEntityAnimationStateBattleMessage(this);
+    }
+
+    /// <summary>Field number for the "RpcId" field.</summary>
+    public const int RpcIdFieldNumber = 90;
+    private int rpcId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RpcId {
+      get { return rpcId_; }
+      set {
+        rpcId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RoomId" field.</summary>
+    public const int RoomIdFieldNumber = 101;
+    private long roomId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long RoomId {
+      get { return roomId_; }
+      set {
+        roomId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 102;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "EntityId" field.</summary>
+    public const int EntityIdFieldNumber = 103;
+    private long entityId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long EntityId {
+      get { return entityId_; }
+      set {
+        entityId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "AttackTrigger" field.</summary>
+    public const int AttackTriggerFieldNumber = 1;
+    private bool attackTrigger_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool AttackTrigger {
+      get { return attackTrigger_; }
+      set {
+        attackTrigger_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "InPursuit" field.</summary>
+    public const int InPursuitFieldNumber = 2;
+    private bool inPursuit_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool InPursuit {
+      get { return inPursuit_; }
+      set {
+        inPursuit_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "IsGrounded" field.</summary>
+    public const int IsGroundedFieldNumber = 3;
+    private bool isGrounded_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsGrounded {
+      get { return isGrounded_; }
+      set {
+        isGrounded_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "NearBase" field.</summary>
+    public const int NearBaseFieldNumber = 4;
+    private bool nearBase_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool NearBase {
+      get { return nearBase_; }
+      set {
+        nearBase_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "SpottedTrigger" field.</summary>
+    public const int SpottedTriggerFieldNumber = 5;
+    private bool spottedTrigger_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool SpottedTrigger {
+      get { return spottedTrigger_; }
+      set {
+        spottedTrigger_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "IdleState" field.</summary>
+    public const int IdleStateFieldNumber = 6;
+    private float idleState_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float IdleState {
+      get { return idleState_; }
+      set {
+        idleState_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SyncChomperEntityAnimationStateBattleMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SyncChomperEntityAnimationStateBattleMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RpcId != other.RpcId) return false;
+      if (RoomId != other.RoomId) return false;
+      if (PlayerId != other.PlayerId) return false;
+      if (EntityId != other.EntityId) return false;
+      if (AttackTrigger != other.AttackTrigger) return false;
+      if (InPursuit != other.InPursuit) return false;
+      if (IsGrounded != other.IsGrounded) return false;
+      if (NearBase != other.NearBase) return false;
+      if (SpottedTrigger != other.SpottedTrigger) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(IdleState, other.IdleState)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (RoomId != 0L) hash ^= RoomId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (EntityId != 0L) hash ^= EntityId.GetHashCode();
+      if (AttackTrigger != false) hash ^= AttackTrigger.GetHashCode();
+      if (InPursuit != false) hash ^= InPursuit.GetHashCode();
+      if (IsGrounded != false) hash ^= IsGrounded.GetHashCode();
+      if (NearBase != false) hash ^= NearBase.GetHashCode();
+      if (SpottedTrigger != false) hash ^= SpottedTrigger.GetHashCode();
+      if (IdleState != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(IdleState);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (AttackTrigger != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(AttackTrigger);
+      }
+      if (InPursuit != false) {
+        output.WriteRawTag(16);
+        output.WriteBool(InPursuit);
+      }
+      if (IsGrounded != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(IsGrounded);
+      }
+      if (NearBase != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(NearBase);
+      }
+      if (SpottedTrigger != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(SpottedTrigger);
+      }
+      if (IdleState != 0F) {
+        output.WriteRawTag(53);
+        output.WriteFloat(IdleState);
+      }
+      if (RpcId != 0) {
+        output.WriteRawTag(208, 5);
+        output.WriteInt32(RpcId);
+      }
+      if (RoomId != 0L) {
+        output.WriteRawTag(168, 6);
+        output.WriteInt64(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(178, 6);
+        output.WriteString(PlayerId);
+      }
+      if (EntityId != 0L) {
+        output.WriteRawTag(184, 6);
+        output.WriteInt64(EntityId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RpcId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (RoomId != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
+      if (EntityId != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(EntityId);
+      }
+      if (AttackTrigger != false) {
+        size += 1 + 1;
+      }
+      if (InPursuit != false) {
+        size += 1 + 1;
+      }
+      if (IsGrounded != false) {
+        size += 1 + 1;
+      }
+      if (NearBase != false) {
+        size += 1 + 1;
+      }
+      if (SpottedTrigger != false) {
+        size += 1 + 1;
+      }
+      if (IdleState != 0F) {
+        size += 1 + 4;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SyncChomperEntityAnimationStateBattleMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RpcId != 0) {
+        RpcId = other.RpcId;
+      }
+      if (other.RoomId != 0L) {
+        RoomId = other.RoomId;
+      }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
+      if (other.EntityId != 0L) {
+        EntityId = other.EntityId;
+      }
+      if (other.AttackTrigger != false) {
+        AttackTrigger = other.AttackTrigger;
+      }
+      if (other.InPursuit != false) {
+        InPursuit = other.InPursuit;
+      }
+      if (other.IsGrounded != false) {
+        IsGrounded = other.IsGrounded;
+      }
+      if (other.NearBase != false) {
+        NearBase = other.NearBase;
+      }
+      if (other.SpottedTrigger != false) {
+        SpottedTrigger = other.SpottedTrigger;
+      }
+      if (other.IdleState != 0F) {
+        IdleState = other.IdleState;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            AttackTrigger = input.ReadBool();
+            break;
+          }
+          case 16: {
+            InPursuit = input.ReadBool();
+            break;
+          }
+          case 24: {
+            IsGrounded = input.ReadBool();
+            break;
+          }
+          case 32: {
+            NearBase = input.ReadBool();
+            break;
+          }
+          case 40: {
+            SpottedTrigger = input.ReadBool();
+            break;
+          }
+          case 53: {
+            IdleState = input.ReadFloat();
+            break;
+          }
+          case 720: {
+            RpcId = input.ReadInt32();
+            break;
+          }
+          case 808: {
+            RoomId = input.ReadInt64();
+            break;
+          }
+          case 818: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 824: {
+            EntityId = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class SyncEnemyEntityAnimationStateBattleMessage : pb::IMessage<SyncEnemyEntityAnimationStateBattleMessage> {
+    private static readonly pb::MessageParser<SyncEnemyEntityAnimationStateBattleMessage> _parser = new pb::MessageParser<SyncEnemyEntityAnimationStateBattleMessage>(() => new SyncEnemyEntityAnimationStateBattleMessage());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<SyncEnemyEntityAnimationStateBattleMessage> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncEnemyEntityAnimationStateBattleMessage() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncEnemyEntityAnimationStateBattleMessage(SyncEnemyEntityAnimationStateBattleMessage other) : this() {
+      rpcId_ = other.rpcId_;
+      roomId_ = other.roomId_;
+      playerId_ = other.playerId_;
+      entityId_ = other.entityId_;
+      hitTrigger_ = other.hitTrigger_;
+      verticalHitDot_ = other.verticalHitDot_;
+      horizontalHitDot_ = other.horizontalHitDot_;
+      thrownTrigger_ = other.thrownTrigger_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public SyncEnemyEntityAnimationStateBattleMessage Clone() {
+      return new SyncEnemyEntityAnimationStateBattleMessage(this);
+    }
+
+    /// <summary>Field number for the "RpcId" field.</summary>
+    public const int RpcIdFieldNumber = 90;
+    private int rpcId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RpcId {
+      get { return rpcId_; }
+      set {
+        rpcId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "RoomId" field.</summary>
+    public const int RoomIdFieldNumber = 101;
+    private long roomId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long RoomId {
+      get { return roomId_; }
+      set {
+        roomId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 102;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "EntityId" field.</summary>
+    public const int EntityIdFieldNumber = 103;
+    private long entityId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long EntityId {
+      get { return entityId_; }
+      set {
+        entityId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "HitTrigger" field.</summary>
+    public const int HitTriggerFieldNumber = 1;
+    private bool hitTrigger_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool HitTrigger {
+      get { return hitTrigger_; }
+      set {
+        hitTrigger_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "VerticalHitDot" field.</summary>
+    public const int VerticalHitDotFieldNumber = 2;
+    private float verticalHitDot_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float VerticalHitDot {
+      get { return verticalHitDot_; }
+      set {
+        verticalHitDot_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "HorizontalHitDot" field.</summary>
+    public const int HorizontalHitDotFieldNumber = 3;
+    private float horizontalHitDot_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float HorizontalHitDot {
+      get { return horizontalHitDot_; }
+      set {
+        horizontalHitDot_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ThrownTrigger" field.</summary>
+    public const int ThrownTriggerFieldNumber = 4;
+    private bool thrownTrigger_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool ThrownTrigger {
+      get { return thrownTrigger_; }
+      set {
+        thrownTrigger_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as SyncEnemyEntityAnimationStateBattleMessage);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(SyncEnemyEntityAnimationStateBattleMessage other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RpcId != other.RpcId) return false;
+      if (RoomId != other.RoomId) return false;
+      if (PlayerId != other.PlayerId) return false;
+      if (EntityId != other.EntityId) return false;
+      if (HitTrigger != other.HitTrigger) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(VerticalHitDot, other.VerticalHitDot)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(HorizontalHitDot, other.HorizontalHitDot)) return false;
+      if (ThrownTrigger != other.ThrownTrigger) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (RoomId != 0L) hash ^= RoomId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (EntityId != 0L) hash ^= EntityId.GetHashCode();
+      if (HitTrigger != false) hash ^= HitTrigger.GetHashCode();
+      if (VerticalHitDot != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(VerticalHitDot);
+      if (HorizontalHitDot != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(HorizontalHitDot);
+      if (ThrownTrigger != false) hash ^= ThrownTrigger.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (HitTrigger != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(HitTrigger);
+      }
+      if (VerticalHitDot != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(VerticalHitDot);
+      }
+      if (HorizontalHitDot != 0F) {
+        output.WriteRawTag(29);
+        output.WriteFloat(HorizontalHitDot);
+      }
+      if (ThrownTrigger != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(ThrownTrigger);
+      }
+      if (RpcId != 0) {
+        output.WriteRawTag(208, 5);
+        output.WriteInt32(RpcId);
+      }
+      if (RoomId != 0L) {
+        output.WriteRawTag(168, 6);
+        output.WriteInt64(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(178, 6);
+        output.WriteString(PlayerId);
+      }
+      if (EntityId != 0L) {
+        output.WriteRawTag(184, 6);
+        output.WriteInt64(EntityId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RpcId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (RoomId != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
+      if (EntityId != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(EntityId);
+      }
+      if (HitTrigger != false) {
+        size += 1 + 1;
+      }
+      if (VerticalHitDot != 0F) {
+        size += 1 + 4;
+      }
+      if (HorizontalHitDot != 0F) {
+        size += 1 + 4;
+      }
+      if (ThrownTrigger != false) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(SyncEnemyEntityAnimationStateBattleMessage other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RpcId != 0) {
+        RpcId = other.RpcId;
+      }
+      if (other.RoomId != 0L) {
+        RoomId = other.RoomId;
+      }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
+      if (other.EntityId != 0L) {
+        EntityId = other.EntityId;
+      }
+      if (other.HitTrigger != false) {
+        HitTrigger = other.HitTrigger;
+      }
+      if (other.VerticalHitDot != 0F) {
+        VerticalHitDot = other.VerticalHitDot;
+      }
+      if (other.HorizontalHitDot != 0F) {
+        HorizontalHitDot = other.HorizontalHitDot;
+      }
+      if (other.ThrownTrigger != false) {
+        ThrownTrigger = other.ThrownTrigger;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            HitTrigger = input.ReadBool();
+            break;
+          }
+          case 21: {
+            VerticalHitDot = input.ReadFloat();
+            break;
+          }
+          case 29: {
+            HorizontalHitDot = input.ReadFloat();
+            break;
+          }
+          case 32: {
+            ThrownTrigger = input.ReadBool();
+            break;
+          }
+          case 720: {
+            RpcId = input.ReadInt32();
+            break;
+          }
+          case 808: {
+            RoomId = input.ReadInt64();
+            break;
+          }
+          case 818: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 824: {
+            EntityId = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class SyncStartLevelBattleMessage : pb::IMessage<SyncStartLevelBattleMessage> {
     private static readonly pb::MessageParser<SyncStartLevelBattleMessage> _parser = new pb::MessageParser<SyncStartLevelBattleMessage>(() => new SyncStartLevelBattleMessage());
     private pb::UnknownFieldSet _unknownFields;
@@ -1313,7 +2059,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1554,7 +2300,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1711,7 +2457,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1924,7 +2670,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2289,7 +3035,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2474,7 +3220,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2603,7 +3349,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[13]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2816,7 +3562,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2973,7 +3719,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[15]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3186,7 +3932,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[16]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3343,7 +4089,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[17]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3562,7 +4308,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[18]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3691,7 +4437,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[19]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3896,7 +4642,7 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]

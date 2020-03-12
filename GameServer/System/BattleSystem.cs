@@ -55,24 +55,36 @@ namespace GameServer.System
         /// <param name="playerId"></param>
         private void OnPlayerDisConnect(string playerId)
         {
+            long roomFlag = -1L;
             foreach (var IDandBattleEntity in m_BattleEntityDic)
             {
                 long roomId = IDandBattleEntity.Key;
                 var battleEntity = IDandBattleEntity.Value;
                 if (battleEntity.Roomer == playerId)
                 {
+                    roomFlag = roomId;
                     //todo 这里要直接通告所有玩家断开连接,目前逻辑暂时先不写
                 }
 
 
                 if (battleEntity.Players.Contains(playerId))
                 {
+                    roomFlag = roomId;
                     battleEntity.Players.Remove(playerId);
                     BroadcastBattleEntity(
                         new B2C_MissingPlayerEntityBattleMessage {PlayerId = playerId, RoomId = roomId },
                         roomId);
                 }
             }
+
+            if (m_BattleEntityDic.TryGetValue(roomFlag, out var b))
+            {
+                if (b == null || b.Players.Count <= 0)
+                {
+                    m_BattleEntityDic.Remove(roomFlag);
+                }
+            }
+            
         }
 
         /// <summary>
@@ -108,6 +120,7 @@ namespace GameServer.System
         {
             if (!m_BattleEntityDic.TryGetValue(roomId, out var battleEntity))
             {
+                Log.Info("Warning::BroadcastBattleEntity not find battleEntity Id = "+roomId);
                 return;
             }
             GameServer.Instance.PlayerCtxManager.BroadcastLocalMessagebyPlayerId(new SystemSendNetMessage { Message = msg }, battleEntity.Players);
