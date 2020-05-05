@@ -7,7 +7,7 @@ using Crazy.Common;
 using GameServer.System;
 using Google.Protobuf.Collections;
 
-namespace GameServer.Handler
+namespace LobbyServer
 {
     [MessageHandler]
     public class C2L_CreateRoomReqMessageHandler:AMRpcHandler<C2L_CreateRoomReqMessage,L2C_CreateRoomAckMessage>
@@ -15,7 +15,7 @@ namespace GameServer.Handler
         protected override void Run(ISession playerContext, C2L_CreateRoomReqMessage message, Action<L2C_CreateRoomAckMessage> reply)
         {
             var response = new L2C_CreateRoomAckMessage();
-            var item = GameServer.Instance.GetSystem<LobbySystem>().OnCreateRoom((playerContext as SampleGameServerPlayerContext).ContextStringName);
+            var item = LobbyServer.Instance.GetSystem<LobbySystem>().OnCreateRoom(message.PlayerId);
 
             response.RoomId = item.RoomId;
 
@@ -30,7 +30,7 @@ namespace GameServer.Handler
         {
             var response = new L2C_JoinRoomAckMessage();
 
-            var item = GameServer.Instance.GetSystem<LobbySystem>().OnJoinRoom((playerContext as SampleGameServerPlayerContext).ContextStringName,message.RoomId);
+            var item = LobbyServer.Instance.GetSystem<LobbySystem>().OnJoinRoom(message.PlayerId,message.RoomId);
 
             response.RoomId = item.RoomId;
 
@@ -45,7 +45,7 @@ namespace GameServer.Handler
         {
             var response = new L2C_GetRoomInfoAckMessage();
 
-            var roomItem = GameServer.Instance.GetSystem<LobbySystem>().GetRoomItem(message.RoomId);
+            var roomItem = LobbyServer.Instance.GetSystem<LobbySystem>().GetRoomItem(message.RoomId);
             response.RoomInfo = new RoomInfoMessage();
             if (roomItem == null)
                 response.RoomInfo.RoomId = -1L;
@@ -71,33 +71,45 @@ namespace GameServer.Handler
     {
         protected override void Run(ISession playerContext, C2L_GetRoomListInfoReqMessage message, Action<L2C_GetRoomListInfoAckMessage> reply)
         {
-            var response = new L2C_GetRoomListInfoAckMessage();
-
-            var roomItems = GameServer.Instance.GetSystem<LobbySystem>().GetRoomList();
-            if (roomItems == null || roomItems.Count == 0) { }
-
-            else
+            try
             {
-                foreach (var roomItem in roomItems)
-                {
-                    var item = new RoomInfoMessage
-                    {
-                        RoomId = roomItem.RoomId,
-                        RoomCapacity = roomItem.Capacity,
-                        RoomName = roomItem.RoomName,
-                        Roomer = roomItem.Roomer,
-                        RoomState = roomItem.RoomState
-                    };
-                    foreach (var id in roomItem.Players)
-                    {
-                        item.PlayerIds.Add(id);
-                    }
-                    response.RoomInfos.Add(item);
-                }
-                
-            }
+                var response = new L2C_GetRoomListInfoAckMessage();
 
-            reply(response);
+                var roomItems = LobbyServer.Instance.GetSystem<LobbySystem>().GetRoomList();
+                if (roomItems == null || roomItems.Count == 0)
+                {
+                }
+
+                else
+                {
+                    foreach (var roomItem in roomItems)
+                    {
+                        var item = new RoomInfoMessage
+                        {
+                            RoomId = roomItem.RoomId,
+                            RoomCapacity = roomItem.Capacity,
+                            RoomName = roomItem.RoomName,
+                            Roomer = roomItem.Roomer,
+                            RoomState = roomItem.RoomState
+                        };
+                        foreach (var id in roomItem.Players)
+                        {
+                            item.PlayerIds.Add(id);
+                        }
+
+                        response.RoomInfos.Add(item);
+                    }
+
+                }
+
+                Log.Info("C2L_GetRoomListInfoReqMessageHandler::Return response RpcId = " + response.RpcId);
+                reply(response);
+            }
+            catch (Exception e)
+            {
+                Log.Info("C2L_GetRoomListInfoReqMessageHandler"+e.ToString());
+            }
+            
         }
     }
 }

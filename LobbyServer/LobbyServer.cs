@@ -1,116 +1,65 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
 using Crazy.Common;
+using Crazy.NetSharp;
 using Crazy.ServerBase;
+using GameServer;
 using GameServer.System;
 
-namespace GameServer
+namespace LobbyServer
 {
-    public class GameServer:ServerBase
+    public class LobbyServer : ServerBase
     {
-        public GameServer() : base()
+        public LobbyServer() : base()
         {
             m_instance = this;
         }
         /// <summary>
         /// 静态实例
         /// </summary>
-        public new static GameServer Instance => (GameServer)(ServerBase.Instance);
+        public new static LobbyServer Instance => (LobbyServer)(ServerBase.Instance);
 
         public override bool Initialize<GlobalConfigureType, PlayerContextBase>(string globalPath, Type plyaerContextType, IMessagePacker messagePraser, string serverName)
         {
             //初始化程序集
             TypeManager.Instance.Add(DLLType.Common, Assembly.GetAssembly(typeof(TypeManager)));
             TypeManager.Instance.Add(DLLType.ServerBase, Assembly.GetAssembly(typeof(ServerBase)));
-            TypeManager.Instance.Add(DLLType.GameServer, Assembly.GetAssembly(typeof(GameServer)));
-
+            TypeManager.Instance.Add(DLLType.GameServer, Assembly.GetAssembly(typeof(LobbyServer)));
+            //var types = TypeManager.Instance.GetTypes(typeof(MessageHandlerAttribute));
+            //foreach (var type in types)
+            //{
+            //    Log.Info(type.ToString());
+            //}
             if (!base.Initialize<GlobalConfigureType, PlayerContextBase>(globalPath, plyaerContextType, messagePraser, serverName))
             {
                 return false;
             }
             
-
             //数据库配置
             var dbConfig = m_gameServerGlobalConfig.DBConfigInfos[0];
-            //Log.Info($"ip:{dbConfig.ConnectHost} port:{dbConfig.Port} serviceName:{dbConfig.DataBase} username:{dbConfig.UserName} password:{dbConfig.Password}");
 
-            //GCNotification.GCDone += i =>
-            //{
-            //    Log.Debug("GC = " + i);
+            InitializeSystem();
 
-            //};
-            Log.Debug("GameServer is running with server GC = " + GCSettings.IsServerGC);
-            //MongoDBHelper.CreateDBClient(); //测试
-            //mongodb测试
-
-            //MongoDBHelper.Test();
-
-
-            //初始化功能服务的各个模块系统
-            if (!InitializeSystem())
-            {
-                Log.Info("初始化模块系统失败");
-                return false;
-            }
             //下面可以写启动逻辑线程 将上述游戏逻辑丢到逻辑线程中处理
             return true;
         }
+       
         /// <summary>
         /// 初始化服务器的各个系统
         /// </summary>
         public override bool InitializeSystem()
         {
-            // 匹配系统初始化
-            //Activator.CreateInstance();
-            //Type type = Type.GetType("BattleSystem");
-            //TypeManager.Instance.
-            //Log.Info(type.ToString());
+            LobbySystem lobbySystem = new LobbySystem();
+            lobbySystem.Start();
+            m_SystemDic.Add(lobbySystem.GetType(),lobbySystem);
 
-            //var gameMatchSystem = new GameMatchSystem();
-            //if (!gameMatchSystem.Initialize(m_serverId))
-            //{
-            //    Log.Error("初始化匹配系统失败");
-            //    return false;
-            //}
-            //m_SystemDic.Add(gameMatchSystem.GetType(), gameMatchSystem);
-            ////战斗系统初始化
-            //var battleSystem = new BattleSystem();
-            //if (!battleSystem.Initialize())
-            //{
-            //    Log.Error("初始化战斗系统失败");
-            //    return false;
-            //}
-            //m_SystemDic.Add(battleSystem.GetType(), battleSystem);
-            string serverType = m_gameServerGlobalConfig.ServerContext.Type;
-            if (serverType == "Gate")
-            {
-                UserSystem userSystem = new UserSystem();
-                userSystem.Start();
-                m_SystemDic.Add(userSystem.GetType(), userSystem);
-            }
-            else if(serverType == "Lobby")
-            {
-                LobbySystem lobbySystem = new LobbySystem();
-                lobbySystem.Start();
-                m_SystemDic.Add(lobbySystem.GetType(), lobbySystem);
-            }else if (serverType == "Game")
-            {
-                BattleSystem battleSystem = new BattleSystem();
-                battleSystem.Start();
-                m_SystemDic.Add(battleSystem.GetType(), battleSystem);
-
-            }
-            else
-            {
-                return false;
-            }
-
-            //启动各个系统的Tick功能
+            ////启动各个系统的Tick功能
             //foreach (var item in m_SystemDic.Values)
             //{
             //    item.Start();//首先System.Start
@@ -158,14 +107,19 @@ namespace GameServer
 
         }
 
+      
+
+
         /// <summary>
         /// 获取当前服务器特定配置数据
         /// </summary>
         public global::GameServer.Configure.SampleGameServerGlobalConfig m_gameServerGlobalConfig { get; private set; }
+
         /// <summary>
         /// 服务器用于顺序化AsyncAction的队列池，根据每个Context的UserId来分配该Context对应的AsyncAction所属的队列
         /// </summary>
-
         public int ServerId => m_gameServerGlobalConfig.ServerContext.Id;
+
+      
     }
 }

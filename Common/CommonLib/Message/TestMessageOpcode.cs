@@ -66,31 +66,39 @@ namespace Crazy.Common
 	[Message(TestMessageOpcode.RoomInfoMessage)]
 	public partial class RoomInfoMessage {}
 
+	[Message(TestMessageOpcode.C2G_AllocBattleServerMessageReq)]
+	public partial class C2G_AllocBattleServerMessageReq : IRequest {}
+
+	[Message(TestMessageOpcode.C2G_AllocBattleServerMessageAck)]
+	public partial class C2G_AllocBattleServerMessageAck : IResponse {}
+
 }
 namespace Crazy.Common
 {
 	public static partial class TestMessageOpcode
 	{
-		 public const ushort C2S_TestMessage = 1054;
-		 public const ushort S2C_AllocPlayerIdMessage = 1055;
-		 public const ushort Vector3 = 1056;
-		 public const ushort SyncPlayerEntityBattleMessage = 1057;
-		 public const ushort SyncChomperEntityPhysicStateBattleMessage = 1058;
-		 public const ushort SyncChomperEntityAnimationStateBattleMessage = 1059;
-		 public const ushort SyncEnemyEntityAnimationStateBattleMessage = 1060;
-		 public const ushort SyncStartLevelBattleMessage = 1061;
-		 public const ushort C2B_EnterClubBattleReqMessage = 1062;
-		 public const ushort B2C_EnterClubBattleAckMessage = 1063;
-		 public const ushort B2C_InitPlayerEntityBattleMessage = 1064;
-		 public const ushort B2C_MissingPlayerEntityBattleMessage = 1065;
-		 public const ushort C2L_CreateRoomReqMessage = 1066;
-		 public const ushort L2C_CreateRoomAckMessage = 1067;
-		 public const ushort C2L_JoinRoomReqMessage = 1068;
-		 public const ushort L2C_JoinRoomAckMessage = 1069;
-		 public const ushort C2L_GetRoomInfoReqMessage = 1070;
-		 public const ushort L2C_GetRoomInfoAckMessage = 1071;
-		 public const ushort C2L_GetRoomListInfoReqMessage = 1072;
-		 public const ushort L2C_GetRoomListInfoAckMessage = 1073;
-		 public const ushort RoomInfoMessage = 1074;
+		 public const ushort C2S_TestMessage = 1060;
+		 public const ushort S2C_AllocPlayerIdMessage = 1061;
+		 public const ushort Vector3 = 1062;
+		 public const ushort SyncPlayerEntityBattleMessage = 1063;
+		 public const ushort SyncChomperEntityPhysicStateBattleMessage = 1064;
+		 public const ushort SyncChomperEntityAnimationStateBattleMessage = 1065;
+		 public const ushort SyncEnemyEntityAnimationStateBattleMessage = 1066;
+		 public const ushort SyncStartLevelBattleMessage = 1067;
+		 public const ushort C2B_EnterClubBattleReqMessage = 1068;
+		 public const ushort B2C_EnterClubBattleAckMessage = 1069;
+		 public const ushort B2C_InitPlayerEntityBattleMessage = 1070;
+		 public const ushort B2C_MissingPlayerEntityBattleMessage = 1071;
+		 public const ushort C2L_CreateRoomReqMessage = 1072;
+		 public const ushort L2C_CreateRoomAckMessage = 1073;
+		 public const ushort C2L_JoinRoomReqMessage = 1074;
+		 public const ushort L2C_JoinRoomAckMessage = 1075;
+		 public const ushort C2L_GetRoomInfoReqMessage = 1076;
+		 public const ushort L2C_GetRoomInfoAckMessage = 1077;
+		 public const ushort C2L_GetRoomListInfoReqMessage = 1078;
+		 public const ushort L2C_GetRoomListInfoAckMessage = 1079;
+		 public const ushort RoomInfoMessage = 1080;
+		 public const ushort C2G_AllocBattleServerMessageReq = 1081;
+		 public const ushort C2G_AllocBattleServerMessageAck = 1082;
 	}
 }

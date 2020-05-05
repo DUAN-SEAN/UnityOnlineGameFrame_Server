@@ -28,82 +28,92 @@ namespace Crazy.Common {
             "TWVzc2FnZRINCgVScGNJZBhaIAEoBRIMCgREYXRhGAEgASgJIjsKGFMyQ19B",
             "bGxvY1BsYXllcklkTWVzc2FnZRINCgVScGNJZBhaIAEoBRIQCghQbGF5ZXJJ",
             "ZBgBIAEoCSIqCgdWZWN0b3IzEgkKAVgYASABKAISCQoBWRgCIAEoAhIJCgFa",
-            "GAMgASgCIpkCCh1TeW5jUGxheWVyRW50aXR5QmF0dGxlTWVzc2FnZRINCgVS",
+            "GAMgASgCIqcCCh1TeW5jUGxheWVyRW50aXR5QmF0dGxlTWVzc2FnZRINCgVS",
             "cGNJZBhaIAEoBRIOCgZSb29tSWQYZSABKAMSEAoIUGxheWVySWQYZiABKAkS",
-            "EAoIRW50aXR5SWQYZyABKAMSIgoDUG9zGAIgASgLMhUuQ3JhenkuQ29tbW9u",
+            "EAoIRW50aXR5SWQYZyABKAMSDAoEVGltZRhoIAEoAxIiCgNQb3MYAiABKAsy",
+            "FS5DcmF6eS5Db21tb24uVmVjdG9yMxImCgdGb3J3YXJkGAMgASgLMhUuQ3Jh",
+            "enkuQ29tbW9uLlZlY3RvcjMSEAoISXNHcm91bmQYBCABKAgSFQoNVmVydGlj",
+            "YWxTcGVlZBgFIAEoAhIUCgxGb3J3YXJkU3BlZWQYBiABKAISEwoLTWVsZWVB",
+            "dHRhY2sYByABKAgSFQoNSW5wdXREZXRlY3RlZBgIIAEoCCLNAQopU3luY0No",
+            "b21wZXJFbnRpdHlQaHlzaWNTdGF0ZUJhdHRsZU1lc3NhZ2USDQoFUnBjSWQY",
+            "WiABKAUSDgoGUm9vbUlkGGUgASgDEhAKCFBsYXllcklkGGYgASgJEhAKCEVu",
+            "dGl0eUlkGGcgASgDEhEKCUVuZW15VHlwZRgBIAEoBRIiCgNQb3MYAiABKAsy",
+            "FS5DcmF6eS5Db21tb24uVmVjdG9yMxImCgdGb3J3YXJkGAMgASgLMhUuQ3Jh",
+            "enkuQ29tbW9uLlZlY3RvcjMi7AEKLFN5bmNDaG9tcGVyRW50aXR5QW5pbWF0",
+            "aW9uU3RhdGVCYXR0bGVNZXNzYWdlEg0KBVJwY0lkGFogASgFEg4KBlJvb21J",
+            "ZBhlIAEoAxIQCghQbGF5ZXJJZBhmIAEoCRIQCghFbnRpdHlJZBhnIAEoAxIV",
+            "Cg1BdHRhY2tUcmlnZ2VyGAEgASgIEhEKCUluUHVyc3VpdBgCIAEoCBISCgpJ",
+            "c0dyb3VuZGVkGAMgASgIEhAKCE5lYXJCYXNlGAQgASgIEhYKDlNwb3R0ZWRU",
+            "cmlnZ2VyGAUgASgIEhEKCUlkbGVTdGF0ZRgGIAEoAiLMAQoqU3luY0VuZW15",
+            "RW50aXR5QW5pbWF0aW9uU3RhdGVCYXR0bGVNZXNzYWdlEg0KBVJwY0lkGFog",
+            "ASgFEg4KBlJvb21JZBhlIAEoAxIQCghQbGF5ZXJJZBhmIAEoCRIQCghFbnRp",
+            "dHlJZBhnIAEoAxISCgpIaXRUcmlnZ2VyGAEgASgIEhYKDlZlcnRpY2FsSGl0",
+            "RG90GAIgASgCEhgKEEhvcml6b250YWxIaXREb3QYAyABKAISFQoNVGhyb3du",
+            "VHJpZ2dlchgEIAEoCCJxChtTeW5jU3RhcnRMZXZlbEJhdHRsZU1lc3NhZ2US",
+            "DQoFUnBjSWQYWiABKAUSDgoGUm9vbUlkGGUgASgDEhAKCFBsYXllcklkGGYg",
+            "ASgJEhAKCEVudGl0eUlkGGcgASgDEg8KB0xldmVsSWQYASABKAUiUAodQzJC",
+            "X0VudGVyQ2x1YkJhdHRsZVJlcU1lc3NhZ2USDQoFUnBjSWQYWiABKAUSDgoG",
+            "Um9vbUlkGAEgASgDEhAKCFBsYXllcklkGAIgASgJIl4KHUIyQ19FbnRlckNs",
+            "dWJCYXR0bGVBY2tNZXNzYWdlEg0KBVJwY0lkGFogASgFEg0KBUVycm9yGFsg",
+            "ASgFEg8KB01lc3NhZ2UYXCABKAkSDgoGUm9vbUlkGAEgASgDIvQBCiFCMkNf",
+            "SW5pdFBsYXllckVudGl0eUJhdHRsZU1lc3NhZ2USDQoFUnBjSWQYWiABKAUS",
+            "EAoIUGxheWVySWQYASABKAkSIgoDUG9zGAIgASgLMhUuQ3JhenkuQ29tbW9u",
             "LlZlY3RvcjMSJgoHRm9yd2FyZBgDIAEoCzIVLkNyYXp5LkNvbW1vbi5WZWN0",
             "b3IzEhAKCElzR3JvdW5kGAQgASgIEhUKDVZlcnRpY2FsU3BlZWQYBSABKAIS",
-            "FAoMRm9yd2FyZFNwZWVkGAYgASgCEhMKC01lbGVlQXR0YWNrGAcgASgIEhUK",
-            "DUlucHV0RGV0ZWN0ZWQYCCABKAgizQEKKVN5bmNDaG9tcGVyRW50aXR5UGh5",
-            "c2ljU3RhdGVCYXR0bGVNZXNzYWdlEg0KBVJwY0lkGFogASgFEg4KBlJvb21J",
-            "ZBhlIAEoAxIQCghQbGF5ZXJJZBhmIAEoCRIQCghFbnRpdHlJZBhnIAEoAxIR",
-            "CglFbmVteVR5cGUYASABKAUSIgoDUG9zGAIgASgLMhUuQ3JhenkuQ29tbW9u",
-            "LlZlY3RvcjMSJgoHRm9yd2FyZBgDIAEoCzIVLkNyYXp5LkNvbW1vbi5WZWN0",
-            "b3IzIuwBCixTeW5jQ2hvbXBlckVudGl0eUFuaW1hdGlvblN0YXRlQmF0dGxl",
-            "TWVzc2FnZRINCgVScGNJZBhaIAEoBRIOCgZSb29tSWQYZSABKAMSEAoIUGxh",
-            "eWVySWQYZiABKAkSEAoIRW50aXR5SWQYZyABKAMSFQoNQXR0YWNrVHJpZ2dl",
-            "chgBIAEoCBIRCglJblB1cnN1aXQYAiABKAgSEgoKSXNHcm91bmRlZBgDIAEo",
-            "CBIQCghOZWFyQmFzZRgEIAEoCBIWCg5TcG90dGVkVHJpZ2dlchgFIAEoCBIR",
-            "CglJZGxlU3RhdGUYBiABKAIizAEKKlN5bmNFbmVteUVudGl0eUFuaW1hdGlv",
-            "blN0YXRlQmF0dGxlTWVzc2FnZRINCgVScGNJZBhaIAEoBRIOCgZSb29tSWQY",
-            "ZSABKAMSEAoIUGxheWVySWQYZiABKAkSEAoIRW50aXR5SWQYZyABKAMSEgoK",
-            "SGl0VHJpZ2dlchgBIAEoCBIWCg5WZXJ0aWNhbEhpdERvdBgCIAEoAhIYChBI",
-            "b3Jpem9udGFsSGl0RG90GAMgASgCEhUKDVRocm93blRyaWdnZXIYBCABKAgi",
-            "cQobU3luY1N0YXJ0TGV2ZWxCYXR0bGVNZXNzYWdlEg0KBVJwY0lkGFogASgF",
-            "Eg4KBlJvb21JZBhlIAEoAxIQCghQbGF5ZXJJZBhmIAEoCRIQCghFbnRpdHlJ",
-            "ZBhnIAEoAxIPCgdMZXZlbElkGAEgASgFIj4KHUMyQl9FbnRlckNsdWJCYXR0",
-            "bGVSZXFNZXNzYWdlEg0KBVJwY0lkGFogASgFEg4KBlJvb21JZBgBIAEoAyJe",
-            "Ch1CMkNfRW50ZXJDbHViQmF0dGxlQWNrTWVzc2FnZRINCgVScGNJZBhaIAEo",
-            "BRINCgVFcnJvchhbIAEoBRIPCgdNZXNzYWdlGFwgASgJEg4KBlJvb21JZBgB",
-            "IAEoAyL0AQohQjJDX0luaXRQbGF5ZXJFbnRpdHlCYXR0bGVNZXNzYWdlEg0K",
-            "BVJwY0lkGFogASgFEhAKCFBsYXllcklkGAEgASgJEiIKA1BvcxgCIAEoCzIV",
-            "LkNyYXp5LkNvbW1vbi5WZWN0b3IzEiYKB0ZvcndhcmQYAyABKAsyFS5DcmF6",
-            "eS5Db21tb24uVmVjdG9yMxIQCghJc0dyb3VuZBgEIAEoCBIVCg1WZXJ0aWNh",
-            "bFNwZWVkGAUgASgCEhQKDEZvcndhcmRTcGVlZBgGIAEoAhITCgtNZWxlZUF0",
-            "dGFjaxgHIAEoCBIOCgZSb29tSWQYCCABKAMiVwokQjJDX01pc3NpbmdQbGF5",
-            "ZXJFbnRpdHlCYXR0bGVNZXNzYWdlEg0KBVJwY0lkGFogASgFEg4KBlJvb21J",
-            "ZBgBIAEoAxIQCghQbGF5ZXJJZBgCIAEoCSIpChhDMkxfQ3JlYXRlUm9vbVJl",
-            "cU1lc3NhZ2USDQoFUnBjSWQYWiABKAUiWQoYTDJDX0NyZWF0ZVJvb21BY2tN",
-            "ZXNzYWdlEg0KBVJwY0lkGFogASgFEg0KBUVycm9yGFsgASgFEg8KB01lc3Nh",
-            "Z2UYXCABKAkSDgoGUm9vbUlkGAEgASgDIjcKFkMyTF9Kb2luUm9vbVJlcU1l",
-            "c3NhZ2USDQoFUnBjSWQYWiABKAUSDgoGUm9vbUlkGAEgASgDIlcKFkwyQ19K",
-            "b2luUm9vbUFja01lc3NhZ2USDQoFUnBjSWQYWiABKAUSDQoFRXJyb3IYWyAB",
-            "KAUSDwoHTWVzc2FnZRhcIAEoCRIOCgZSb29tSWQYASABKAMiOgoZQzJMX0dl",
-            "dFJvb21JbmZvUmVxTWVzc2FnZRINCgVScGNJZBhaIAEoBRIOCgZSb29tSWQY",
-            "ASABKAMiewoZTDJDX0dldFJvb21JbmZvQWNrTWVzc2FnZRINCgVScGNJZBha",
-            "IAEoBRINCgVFcnJvchhbIAEoBRIPCgdNZXNzYWdlGFwgASgJEi8KCFJvb21J",
-            "bmZvGAEgASgLMh0uQ3JhenkuQ29tbW9uLlJvb21JbmZvTWVzc2FnZSIuCh1D",
-            "MkxfR2V0Um9vbUxpc3RJbmZvUmVxTWVzc2FnZRINCgVScGNJZBhaIAEoBSKA",
-            "AQodTDJDX0dldFJvb21MaXN0SW5mb0Fja01lc3NhZ2USDQoFUnBjSWQYWiAB",
-            "KAUSDQoFRXJyb3IYWyABKAUSDwoHTWVzc2FnZRhcIAEoCRIwCglSb29tSW5m",
-            "b3MYASADKAsyHS5DcmF6eS5Db21tb24uUm9vbUluZm9NZXNzYWdlIn8KD1Jv",
-            "b21JbmZvTWVzc2FnZRIOCgZSb29tSWQYASABKAMSDgoGUm9vbWVyGAIgASgJ",
-            "EhAKCFJvb21OYW1lGAMgASgJEhEKCVJvb21TdGF0ZRgEIAEoBRIUCgxSb29t",
-            "Q2FwYWNpdHkYBSABKAUSEQoJUGxheWVySWRzGAYgAygJYgZwcm90bzM="));
+            "FAoMRm9yd2FyZFNwZWVkGAYgASgCEhMKC01lbGVlQXR0YWNrGAcgASgIEg4K",
+            "BlJvb21JZBgIIAEoAyJXCiRCMkNfTWlzc2luZ1BsYXllckVudGl0eUJhdHRs",
+            "ZU1lc3NhZ2USDQoFUnBjSWQYWiABKAUSDgoGUm9vbUlkGAEgASgDEhAKCFBs",
+            "YXllcklkGAIgASgJIjsKGEMyTF9DcmVhdGVSb29tUmVxTWVzc2FnZRINCgVS",
+            "cGNJZBhaIAEoBRIQCghQbGF5ZXJJZBgBIAEoCSJrChhMMkNfQ3JlYXRlUm9v",
+            "bUFja01lc3NhZ2USDQoFUnBjSWQYWiABKAUSDQoFRXJyb3IYWyABKAUSDwoH",
+            "TWVzc2FnZRhcIAEoCRIQCghQbGF5ZXJJZBgBIAEoCRIOCgZSb29tSWQYAiAB",
+            "KAMiSQoWQzJMX0pvaW5Sb29tUmVxTWVzc2FnZRINCgVScGNJZBhaIAEoBRIQ",
+            "CghQbGF5ZXJJZBgBIAEoCRIOCgZSb29tSWQYAiABKAMiaQoWTDJDX0pvaW5S",
+            "b29tQWNrTWVzc2FnZRINCgVScGNJZBhaIAEoBRINCgVFcnJvchhbIAEoBRIP",
+            "CgdNZXNzYWdlGFwgASgJEhAKCFBsYXllcklkGAEgASgJEg4KBlJvb21JZBgC",
+            "IAEoAyJMChlDMkxfR2V0Um9vbUluZm9SZXFNZXNzYWdlEg0KBVJwY0lkGFog",
+            "ASgFEhAKCFBsYXllcklkGAEgASgJEg4KBlJvb21JZBgCIAEoAyKNAQoZTDJD",
+            "X0dldFJvb21JbmZvQWNrTWVzc2FnZRINCgVScGNJZBhaIAEoBRINCgVFcnJv",
+            "chhbIAEoBRIPCgdNZXNzYWdlGFwgASgJEhAKCFBsYXllcklkGAEgASgJEi8K",
+            "CFJvb21JbmZvGAIgASgLMh0uQ3JhenkuQ29tbW9uLlJvb21JbmZvTWVzc2Fn",
+            "ZSJACh1DMkxfR2V0Um9vbUxpc3RJbmZvUmVxTWVzc2FnZRINCgVScGNJZBha",
+            "IAEoBRIQCghQbGF5ZXJJZBgBIAEoCSKAAQodTDJDX0dldFJvb21MaXN0SW5m",
+            "b0Fja01lc3NhZ2USDQoFUnBjSWQYWiABKAUSDQoFRXJyb3IYWyABKAUSDwoH",
+            "TWVzc2FnZRhcIAEoCRIwCglSb29tSW5mb3MYASADKAsyHS5DcmF6eS5Db21t",
+            "b24uUm9vbUluZm9NZXNzYWdlIn8KD1Jvb21JbmZvTWVzc2FnZRIOCgZSb29t",
+            "SWQYASABKAMSDgoGUm9vbWVyGAIgASgJEhAKCFJvb21OYW1lGAMgASgJEhEK",
+            "CVJvb21TdGF0ZRgEIAEoBRIUCgxSb29tQ2FwYWNpdHkYBSABKAUSEQoJUGxh",
+            "eWVySWRzGAYgAygJIlIKH0MyR19BbGxvY0JhdHRsZVNlcnZlck1lc3NhZ2VS",
+            "ZXESDQoFUnBjSWQYWiABKAUSEAoIUGxheWVySWQYASABKAkSDgoGUm9vbUlk",
+            "GAIgASgDImIKH0MyR19BbGxvY0JhdHRsZVNlcnZlck1lc3NhZ2VBY2sSDQoF",
+            "UnBjSWQYWiABKAUSDQoFRXJyb3IYWyABKAUSDwoHTWVzc2FnZRhcIAEoCRIQ",
+            "CghQbGF5ZXJJZBgBIAEoCWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2S_TestMessage), global::Crazy.Common.C2S_TestMessage.Parser, new[]{ "RpcId", "Data" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.S2C_AllocPlayerIdMessage), global::Crazy.Common.S2C_AllocPlayerIdMessage.Parser, new[]{ "RpcId", "PlayerId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.Vector3), global::Crazy.Common.Vector3.Parser, new[]{ "X", "Y", "Z" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncPlayerEntityBattleMessage), global::Crazy.Common.SyncPlayerEntityBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "Pos", "Forward", "IsGround", "VerticalSpeed", "ForwardSpeed", "MeleeAttack", "InputDetected" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncPlayerEntityBattleMessage), global::Crazy.Common.SyncPlayerEntityBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "Time", "Pos", "Forward", "IsGround", "VerticalSpeed", "ForwardSpeed", "MeleeAttack", "InputDetected" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncChomperEntityPhysicStateBattleMessage), global::Crazy.Common.SyncChomperEntityPhysicStateBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "EnemyType", "Pos", "Forward" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncChomperEntityAnimationStateBattleMessage), global::Crazy.Common.SyncChomperEntityAnimationStateBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "AttackTrigger", "InPursuit", "IsGrounded", "NearBase", "SpottedTrigger", "IdleState" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncEnemyEntityAnimationStateBattleMessage), global::Crazy.Common.SyncEnemyEntityAnimationStateBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "HitTrigger", "VerticalHitDot", "HorizontalHitDot", "ThrownTrigger" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.SyncStartLevelBattleMessage), global::Crazy.Common.SyncStartLevelBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId", "EntityId", "LevelId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2B_EnterClubBattleReqMessage), global::Crazy.Common.C2B_EnterClubBattleReqMessage.Parser, new[]{ "RpcId", "RoomId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2B_EnterClubBattleReqMessage), global::Crazy.Common.C2B_EnterClubBattleReqMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.B2C_EnterClubBattleAckMessage), global::Crazy.Common.B2C_EnterClubBattleAckMessage.Parser, new[]{ "RpcId", "Error", "Message", "RoomId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.B2C_InitPlayerEntityBattleMessage), global::Crazy.Common.B2C_InitPlayerEntityBattleMessage.Parser, new[]{ "RpcId", "PlayerId", "Pos", "Forward", "IsGround", "VerticalSpeed", "ForwardSpeed", "MeleeAttack", "RoomId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.B2C_MissingPlayerEntityBattleMessage), global::Crazy.Common.B2C_MissingPlayerEntityBattleMessage.Parser, new[]{ "RpcId", "RoomId", "PlayerId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2L_CreateRoomReqMessage), global::Crazy.Common.C2L_CreateRoomReqMessage.Parser, new[]{ "RpcId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.L2C_CreateRoomAckMessage), global::Crazy.Common.L2C_CreateRoomAckMessage.Parser, new[]{ "RpcId", "Error", "Message", "RoomId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2L_JoinRoomReqMessage), global::Crazy.Common.C2L_JoinRoomReqMessage.Parser, new[]{ "RpcId", "RoomId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.L2C_JoinRoomAckMessage), global::Crazy.Common.L2C_JoinRoomAckMessage.Parser, new[]{ "RpcId", "Error", "Message", "RoomId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2L_GetRoomInfoReqMessage), global::Crazy.Common.C2L_GetRoomInfoReqMessage.Parser, new[]{ "RpcId", "RoomId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.L2C_GetRoomInfoAckMessage), global::Crazy.Common.L2C_GetRoomInfoAckMessage.Parser, new[]{ "RpcId", "Error", "Message", "RoomInfo" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2L_GetRoomListInfoReqMessage), global::Crazy.Common.C2L_GetRoomListInfoReqMessage.Parser, new[]{ "RpcId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2L_CreateRoomReqMessage), global::Crazy.Common.C2L_CreateRoomReqMessage.Parser, new[]{ "RpcId", "PlayerId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.L2C_CreateRoomAckMessage), global::Crazy.Common.L2C_CreateRoomAckMessage.Parser, new[]{ "RpcId", "Error", "Message", "PlayerId", "RoomId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2L_JoinRoomReqMessage), global::Crazy.Common.C2L_JoinRoomReqMessage.Parser, new[]{ "RpcId", "PlayerId", "RoomId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.L2C_JoinRoomAckMessage), global::Crazy.Common.L2C_JoinRoomAckMessage.Parser, new[]{ "RpcId", "Error", "Message", "PlayerId", "RoomId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2L_GetRoomInfoReqMessage), global::Crazy.Common.C2L_GetRoomInfoReqMessage.Parser, new[]{ "RpcId", "PlayerId", "RoomId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.L2C_GetRoomInfoAckMessage), global::Crazy.Common.L2C_GetRoomInfoAckMessage.Parser, new[]{ "RpcId", "Error", "Message", "PlayerId", "RoomInfo" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2L_GetRoomListInfoReqMessage), global::Crazy.Common.C2L_GetRoomListInfoReqMessage.Parser, new[]{ "RpcId", "PlayerId" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.L2C_GetRoomListInfoAckMessage), global::Crazy.Common.L2C_GetRoomListInfoAckMessage.Parser, new[]{ "RpcId", "Error", "Message", "RoomInfos" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.RoomInfoMessage), global::Crazy.Common.RoomInfoMessage.Parser, new[]{ "RoomId", "Roomer", "RoomName", "RoomState", "RoomCapacity", "PlayerIds" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.RoomInfoMessage), global::Crazy.Common.RoomInfoMessage.Parser, new[]{ "RoomId", "Roomer", "RoomName", "RoomState", "RoomCapacity", "PlayerIds" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2G_AllocBattleServerMessageReq), global::Crazy.Common.C2G_AllocBattleServerMessageReq.Parser, new[]{ "RpcId", "PlayerId", "RoomId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Crazy.Common.C2G_AllocBattleServerMessageAck), global::Crazy.Common.C2G_AllocBattleServerMessageAck.Parser, new[]{ "RpcId", "Error", "Message", "PlayerId" }, null, null, null)
           }));
     }
     #endregion
@@ -644,6 +654,7 @@ namespace Crazy.Common {
       roomId_ = other.roomId_;
       playerId_ = other.playerId_;
       entityId_ = other.entityId_;
+      time_ = other.time_;
       pos_ = other.pos_ != null ? other.pos_.Clone() : null;
       forward_ = other.forward_ != null ? other.forward_.Clone() : null;
       isGround_ = other.isGround_;
@@ -700,6 +711,17 @@ namespace Crazy.Common {
       get { return entityId_; }
       set {
         entityId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Time" field.</summary>
+    public const int TimeFieldNumber = 104;
+    private long time_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Time {
+      get { return time_; }
+      set {
+        time_ = value;
       }
     }
 
@@ -797,6 +819,7 @@ namespace Crazy.Common {
       if (RoomId != other.RoomId) return false;
       if (PlayerId != other.PlayerId) return false;
       if (EntityId != other.EntityId) return false;
+      if (Time != other.Time) return false;
       if (!object.Equals(Pos, other.Pos)) return false;
       if (!object.Equals(Forward, other.Forward)) return false;
       if (IsGround != other.IsGround) return false;
@@ -814,6 +837,7 @@ namespace Crazy.Common {
       if (RoomId != 0L) hash ^= RoomId.GetHashCode();
       if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (EntityId != 0L) hash ^= EntityId.GetHashCode();
+      if (Time != 0L) hash ^= Time.GetHashCode();
       if (pos_ != null) hash ^= Pos.GetHashCode();
       if (forward_ != null) hash ^= Forward.GetHashCode();
       if (IsGround != false) hash ^= IsGround.GetHashCode();
@@ -878,6 +902,10 @@ namespace Crazy.Common {
         output.WriteRawTag(184, 6);
         output.WriteInt64(EntityId);
       }
+      if (Time != 0L) {
+        output.WriteRawTag(192, 6);
+        output.WriteInt64(Time);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -897,6 +925,9 @@ namespace Crazy.Common {
       }
       if (EntityId != 0L) {
         size += 2 + pb::CodedOutputStream.ComputeInt64Size(EntityId);
+      }
+      if (Time != 0L) {
+        size += 2 + pb::CodedOutputStream.ComputeInt64Size(Time);
       }
       if (pos_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Pos);
@@ -941,6 +972,9 @@ namespace Crazy.Common {
       }
       if (other.EntityId != 0L) {
         EntityId = other.EntityId;
+      }
+      if (other.Time != 0L) {
+        Time = other.Time;
       }
       if (other.pos_ != null) {
         if (pos_ == null) {
@@ -1028,6 +1062,10 @@ namespace Crazy.Common {
           }
           case 824: {
             EntityId = input.ReadInt64();
+            break;
+          }
+          case 832: {
+            Time = input.ReadInt64();
             break;
           }
         }
@@ -2319,6 +2357,7 @@ namespace Crazy.Common {
     public C2B_EnterClubBattleReqMessage(C2B_EnterClubBattleReqMessage other) : this() {
       rpcId_ = other.rpcId_;
       roomId_ = other.roomId_;
+      playerId_ = other.playerId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2349,6 +2388,17 @@ namespace Crazy.Common {
       }
     }
 
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 2;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as C2B_EnterClubBattleReqMessage);
@@ -2364,6 +2414,7 @@ namespace Crazy.Common {
       }
       if (RpcId != other.RpcId) return false;
       if (RoomId != other.RoomId) return false;
+      if (PlayerId != other.PlayerId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2372,6 +2423,7 @@ namespace Crazy.Common {
       int hash = 1;
       if (RpcId != 0) hash ^= RpcId.GetHashCode();
       if (RoomId != 0L) hash ^= RoomId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2388,6 +2440,10 @@ namespace Crazy.Common {
       if (RoomId != 0L) {
         output.WriteRawTag(8);
         output.WriteInt64(RoomId);
+      }
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PlayerId);
       }
       if (RpcId != 0) {
         output.WriteRawTag(208, 5);
@@ -2407,6 +2463,9 @@ namespace Crazy.Common {
       if (RoomId != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
       }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -2424,6 +2483,9 @@ namespace Crazy.Common {
       if (other.RoomId != 0L) {
         RoomId = other.RoomId;
       }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -2437,6 +2499,10 @@ namespace Crazy.Common {
             break;
           case 8: {
             RoomId = input.ReadInt64();
+            break;
+          }
+          case 18: {
+            PlayerId = input.ReadString();
             break;
           }
           case 720: {
@@ -3238,6 +3304,7 @@ namespace Crazy.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public C2L_CreateRoomReqMessage(C2L_CreateRoomReqMessage other) : this() {
       rpcId_ = other.rpcId_;
+      playerId_ = other.playerId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -3257,6 +3324,17 @@ namespace Crazy.Common {
       }
     }
 
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 1;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as C2L_CreateRoomReqMessage);
@@ -3271,6 +3349,7 @@ namespace Crazy.Common {
         return true;
       }
       if (RpcId != other.RpcId) return false;
+      if (PlayerId != other.PlayerId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -3278,6 +3357,7 @@ namespace Crazy.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -3291,6 +3371,10 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerId);
+      }
       if (RpcId != 0) {
         output.WriteRawTag(208, 5);
         output.WriteInt32(RpcId);
@@ -3306,6 +3390,9 @@ namespace Crazy.Common {
       if (RpcId != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
       }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3320,6 +3407,9 @@ namespace Crazy.Common {
       if (other.RpcId != 0) {
         RpcId = other.RpcId;
       }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -3331,6 +3421,10 @@ namespace Crazy.Common {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            PlayerId = input.ReadString();
+            break;
+          }
           case 720: {
             RpcId = input.ReadInt32();
             break;
@@ -3369,6 +3463,7 @@ namespace Crazy.Common {
       rpcId_ = other.rpcId_;
       error_ = other.error_;
       message_ = other.message_;
+      playerId_ = other.playerId_;
       roomId_ = other.roomId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3411,8 +3506,19 @@ namespace Crazy.Common {
       }
     }
 
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 1;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "RoomId" field.</summary>
-    public const int RoomIdFieldNumber = 1;
+    public const int RoomIdFieldNumber = 2;
     private long roomId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long RoomId {
@@ -3438,6 +3544,7 @@ namespace Crazy.Common {
       if (RpcId != other.RpcId) return false;
       if (Error != other.Error) return false;
       if (Message != other.Message) return false;
+      if (PlayerId != other.PlayerId) return false;
       if (RoomId != other.RoomId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3448,6 +3555,7 @@ namespace Crazy.Common {
       if (RpcId != 0) hash ^= RpcId.GetHashCode();
       if (Error != 0) hash ^= Error.GetHashCode();
       if (Message.Length != 0) hash ^= Message.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (RoomId != 0L) hash ^= RoomId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3462,8 +3570,12 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerId);
+      }
       if (RoomId != 0L) {
-        output.WriteRawTag(8);
+        output.WriteRawTag(16);
         output.WriteInt64(RoomId);
       }
       if (RpcId != 0) {
@@ -3495,6 +3607,9 @@ namespace Crazy.Common {
       if (Message.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(Message);
       }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
       if (RoomId != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
       }
@@ -3518,6 +3633,9 @@ namespace Crazy.Common {
       if (other.Message.Length != 0) {
         Message = other.Message;
       }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
       if (other.RoomId != 0L) {
         RoomId = other.RoomId;
       }
@@ -3532,7 +3650,11 @@ namespace Crazy.Common {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
+          case 10: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 16: {
             RoomId = input.ReadInt64();
             break;
           }
@@ -3580,6 +3702,7 @@ namespace Crazy.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public C2L_JoinRoomReqMessage(C2L_JoinRoomReqMessage other) : this() {
       rpcId_ = other.rpcId_;
+      playerId_ = other.playerId_;
       roomId_ = other.roomId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3600,8 +3723,19 @@ namespace Crazy.Common {
       }
     }
 
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 1;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "RoomId" field.</summary>
-    public const int RoomIdFieldNumber = 1;
+    public const int RoomIdFieldNumber = 2;
     private long roomId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long RoomId {
@@ -3625,6 +3759,7 @@ namespace Crazy.Common {
         return true;
       }
       if (RpcId != other.RpcId) return false;
+      if (PlayerId != other.PlayerId) return false;
       if (RoomId != other.RoomId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3633,6 +3768,7 @@ namespace Crazy.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (RoomId != 0L) hash ^= RoomId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3647,8 +3783,12 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerId);
+      }
       if (RoomId != 0L) {
-        output.WriteRawTag(8);
+        output.WriteRawTag(16);
         output.WriteInt64(RoomId);
       }
       if (RpcId != 0) {
@@ -3665,6 +3805,9 @@ namespace Crazy.Common {
       int size = 0;
       if (RpcId != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
       }
       if (RoomId != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
@@ -3683,6 +3826,9 @@ namespace Crazy.Common {
       if (other.RpcId != 0) {
         RpcId = other.RpcId;
       }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
       if (other.RoomId != 0L) {
         RoomId = other.RoomId;
       }
@@ -3697,7 +3843,11 @@ namespace Crazy.Common {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
+          case 10: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 16: {
             RoomId = input.ReadInt64();
             break;
           }
@@ -3739,6 +3889,7 @@ namespace Crazy.Common {
       rpcId_ = other.rpcId_;
       error_ = other.error_;
       message_ = other.message_;
+      playerId_ = other.playerId_;
       roomId_ = other.roomId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3781,8 +3932,19 @@ namespace Crazy.Common {
       }
     }
 
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 1;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "RoomId" field.</summary>
-    public const int RoomIdFieldNumber = 1;
+    public const int RoomIdFieldNumber = 2;
     private long roomId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long RoomId {
@@ -3808,6 +3970,7 @@ namespace Crazy.Common {
       if (RpcId != other.RpcId) return false;
       if (Error != other.Error) return false;
       if (Message != other.Message) return false;
+      if (PlayerId != other.PlayerId) return false;
       if (RoomId != other.RoomId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3818,6 +3981,7 @@ namespace Crazy.Common {
       if (RpcId != 0) hash ^= RpcId.GetHashCode();
       if (Error != 0) hash ^= Error.GetHashCode();
       if (Message.Length != 0) hash ^= Message.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (RoomId != 0L) hash ^= RoomId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3832,8 +3996,12 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerId);
+      }
       if (RoomId != 0L) {
-        output.WriteRawTag(8);
+        output.WriteRawTag(16);
         output.WriteInt64(RoomId);
       }
       if (RpcId != 0) {
@@ -3865,6 +4033,9 @@ namespace Crazy.Common {
       if (Message.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(Message);
       }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
       if (RoomId != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
       }
@@ -3888,6 +4059,9 @@ namespace Crazy.Common {
       if (other.Message.Length != 0) {
         Message = other.Message;
       }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
       if (other.RoomId != 0L) {
         RoomId = other.RoomId;
       }
@@ -3902,7 +4076,11 @@ namespace Crazy.Common {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
+          case 10: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 16: {
             RoomId = input.ReadInt64();
             break;
           }
@@ -3950,6 +4128,7 @@ namespace Crazy.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public C2L_GetRoomInfoReqMessage(C2L_GetRoomInfoReqMessage other) : this() {
       rpcId_ = other.rpcId_;
+      playerId_ = other.playerId_;
       roomId_ = other.roomId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -3970,8 +4149,19 @@ namespace Crazy.Common {
       }
     }
 
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 1;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "RoomId" field.</summary>
-    public const int RoomIdFieldNumber = 1;
+    public const int RoomIdFieldNumber = 2;
     private long roomId_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public long RoomId {
@@ -3995,6 +4185,7 @@ namespace Crazy.Common {
         return true;
       }
       if (RpcId != other.RpcId) return false;
+      if (PlayerId != other.PlayerId) return false;
       if (RoomId != other.RoomId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -4003,6 +4194,7 @@ namespace Crazy.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (RoomId != 0L) hash ^= RoomId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -4017,8 +4209,12 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerId);
+      }
       if (RoomId != 0L) {
-        output.WriteRawTag(8);
+        output.WriteRawTag(16);
         output.WriteInt64(RoomId);
       }
       if (RpcId != 0) {
@@ -4035,6 +4231,9 @@ namespace Crazy.Common {
       int size = 0;
       if (RpcId != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
       }
       if (RoomId != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
@@ -4053,6 +4252,9 @@ namespace Crazy.Common {
       if (other.RpcId != 0) {
         RpcId = other.RpcId;
       }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
       if (other.RoomId != 0L) {
         RoomId = other.RoomId;
       }
@@ -4067,7 +4269,11 @@ namespace Crazy.Common {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 8: {
+          case 10: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 16: {
             RoomId = input.ReadInt64();
             break;
           }
@@ -4109,6 +4315,7 @@ namespace Crazy.Common {
       rpcId_ = other.rpcId_;
       error_ = other.error_;
       message_ = other.message_;
+      playerId_ = other.playerId_;
       roomInfo_ = other.roomInfo_ != null ? other.roomInfo_.Clone() : null;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -4151,8 +4358,19 @@ namespace Crazy.Common {
       }
     }
 
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 1;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     /// <summary>Field number for the "RoomInfo" field.</summary>
-    public const int RoomInfoFieldNumber = 1;
+    public const int RoomInfoFieldNumber = 2;
     private global::Crazy.Common.RoomInfoMessage roomInfo_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public global::Crazy.Common.RoomInfoMessage RoomInfo {
@@ -4178,6 +4396,7 @@ namespace Crazy.Common {
       if (RpcId != other.RpcId) return false;
       if (Error != other.Error) return false;
       if (Message != other.Message) return false;
+      if (PlayerId != other.PlayerId) return false;
       if (!object.Equals(RoomInfo, other.RoomInfo)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -4188,6 +4407,7 @@ namespace Crazy.Common {
       if (RpcId != 0) hash ^= RpcId.GetHashCode();
       if (Error != 0) hash ^= Error.GetHashCode();
       if (Message.Length != 0) hash ^= Message.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (roomInfo_ != null) hash ^= RoomInfo.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -4202,8 +4422,12 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (roomInfo_ != null) {
+      if (PlayerId.Length != 0) {
         output.WriteRawTag(10);
+        output.WriteString(PlayerId);
+      }
+      if (roomInfo_ != null) {
+        output.WriteRawTag(18);
         output.WriteMessage(RoomInfo);
       }
       if (RpcId != 0) {
@@ -4235,6 +4459,9 @@ namespace Crazy.Common {
       if (Message.Length != 0) {
         size += 2 + pb::CodedOutputStream.ComputeStringSize(Message);
       }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
       if (roomInfo_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomInfo);
       }
@@ -4258,6 +4485,9 @@ namespace Crazy.Common {
       if (other.Message.Length != 0) {
         Message = other.Message;
       }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
       if (other.roomInfo_ != null) {
         if (roomInfo_ == null) {
           roomInfo_ = new global::Crazy.Common.RoomInfoMessage();
@@ -4276,6 +4506,10 @@ namespace Crazy.Common {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 10: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 18: {
             if (roomInfo_ == null) {
               roomInfo_ = new global::Crazy.Common.RoomInfoMessage();
             }
@@ -4326,6 +4560,7 @@ namespace Crazy.Common {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public C2L_GetRoomListInfoReqMessage(C2L_GetRoomListInfoReqMessage other) : this() {
       rpcId_ = other.rpcId_;
+      playerId_ = other.playerId_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -4345,6 +4580,17 @@ namespace Crazy.Common {
       }
     }
 
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 1;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as C2L_GetRoomListInfoReqMessage);
@@ -4359,6 +4605,7 @@ namespace Crazy.Common {
         return true;
       }
       if (RpcId != other.RpcId) return false;
+      if (PlayerId != other.PlayerId) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -4366,6 +4613,7 @@ namespace Crazy.Common {
     public override int GetHashCode() {
       int hash = 1;
       if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -4379,6 +4627,10 @@ namespace Crazy.Common {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerId);
+      }
       if (RpcId != 0) {
         output.WriteRawTag(208, 5);
         output.WriteInt32(RpcId);
@@ -4394,6 +4646,9 @@ namespace Crazy.Common {
       if (RpcId != 0) {
         size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
       }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -4408,6 +4663,9 @@ namespace Crazy.Common {
       if (other.RpcId != 0) {
         RpcId = other.RpcId;
       }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -4419,6 +4677,10 @@ namespace Crazy.Common {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 10: {
+            PlayerId = input.ReadString();
+            break;
+          }
           case 720: {
             RpcId = input.ReadInt32();
             break;
@@ -4887,6 +5149,404 @@ namespace Crazy.Common {
           }
           case 50: {
             playerIds_.AddEntriesFrom(input, _repeated_playerIds_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class C2G_AllocBattleServerMessageReq : pb::IMessage<C2G_AllocBattleServerMessageReq> {
+    private static readonly pb::MessageParser<C2G_AllocBattleServerMessageReq> _parser = new pb::MessageParser<C2G_AllocBattleServerMessageReq>(() => new C2G_AllocBattleServerMessageReq());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<C2G_AllocBattleServerMessageReq> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[21]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public C2G_AllocBattleServerMessageReq() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public C2G_AllocBattleServerMessageReq(C2G_AllocBattleServerMessageReq other) : this() {
+      rpcId_ = other.rpcId_;
+      playerId_ = other.playerId_;
+      roomId_ = other.roomId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public C2G_AllocBattleServerMessageReq Clone() {
+      return new C2G_AllocBattleServerMessageReq(this);
+    }
+
+    /// <summary>Field number for the "RpcId" field.</summary>
+    public const int RpcIdFieldNumber = 90;
+    private int rpcId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RpcId {
+      get { return rpcId_; }
+      set {
+        rpcId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 1;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "RoomId" field.</summary>
+    public const int RoomIdFieldNumber = 2;
+    private long roomId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long RoomId {
+      get { return roomId_; }
+      set {
+        roomId_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as C2G_AllocBattleServerMessageReq);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(C2G_AllocBattleServerMessageReq other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RpcId != other.RpcId) return false;
+      if (PlayerId != other.PlayerId) return false;
+      if (RoomId != other.RoomId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (RoomId != 0L) hash ^= RoomId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerId);
+      }
+      if (RoomId != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(RoomId);
+      }
+      if (RpcId != 0) {
+        output.WriteRawTag(208, 5);
+        output.WriteInt32(RpcId);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RpcId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
+      if (RoomId != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(RoomId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(C2G_AllocBattleServerMessageReq other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RpcId != 0) {
+        RpcId = other.RpcId;
+      }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
+      if (other.RoomId != 0L) {
+        RoomId = other.RoomId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 16: {
+            RoomId = input.ReadInt64();
+            break;
+          }
+          case 720: {
+            RpcId = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class C2G_AllocBattleServerMessageAck : pb::IMessage<C2G_AllocBattleServerMessageAck> {
+    private static readonly pb::MessageParser<C2G_AllocBattleServerMessageAck> _parser = new pb::MessageParser<C2G_AllocBattleServerMessageAck>(() => new C2G_AllocBattleServerMessageAck());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<C2G_AllocBattleServerMessageAck> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Crazy.Common.TestMessageReflection.Descriptor.MessageTypes[22]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public C2G_AllocBattleServerMessageAck() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public C2G_AllocBattleServerMessageAck(C2G_AllocBattleServerMessageAck other) : this() {
+      rpcId_ = other.rpcId_;
+      error_ = other.error_;
+      message_ = other.message_;
+      playerId_ = other.playerId_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public C2G_AllocBattleServerMessageAck Clone() {
+      return new C2G_AllocBattleServerMessageAck(this);
+    }
+
+    /// <summary>Field number for the "RpcId" field.</summary>
+    public const int RpcIdFieldNumber = 90;
+    private int rpcId_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int RpcId {
+      get { return rpcId_; }
+      set {
+        rpcId_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Error" field.</summary>
+    public const int ErrorFieldNumber = 91;
+    private int error_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Error {
+      get { return error_; }
+      set {
+        error_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Message" field.</summary>
+    public const int MessageFieldNumber = 92;
+    private string message_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Message {
+      get { return message_; }
+      set {
+        message_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "PlayerId" field.</summary>
+    public const int PlayerIdFieldNumber = 1;
+    private string playerId_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PlayerId {
+      get { return playerId_; }
+      set {
+        playerId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as C2G_AllocBattleServerMessageAck);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(C2G_AllocBattleServerMessageAck other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RpcId != other.RpcId) return false;
+      if (Error != other.Error) return false;
+      if (Message != other.Message) return false;
+      if (PlayerId != other.PlayerId) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RpcId != 0) hash ^= RpcId.GetHashCode();
+      if (Error != 0) hash ^= Error.GetHashCode();
+      if (Message.Length != 0) hash ^= Message.GetHashCode();
+      if (PlayerId.Length != 0) hash ^= PlayerId.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (PlayerId.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(PlayerId);
+      }
+      if (RpcId != 0) {
+        output.WriteRawTag(208, 5);
+        output.WriteInt32(RpcId);
+      }
+      if (Error != 0) {
+        output.WriteRawTag(216, 5);
+        output.WriteInt32(Error);
+      }
+      if (Message.Length != 0) {
+        output.WriteRawTag(226, 5);
+        output.WriteString(Message);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RpcId != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(RpcId);
+      }
+      if (Error != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(Error);
+      }
+      if (Message.Length != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeStringSize(Message);
+      }
+      if (PlayerId.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PlayerId);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(C2G_AllocBattleServerMessageAck other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RpcId != 0) {
+        RpcId = other.RpcId;
+      }
+      if (other.Error != 0) {
+        Error = other.Error;
+      }
+      if (other.Message.Length != 0) {
+        Message = other.Message;
+      }
+      if (other.PlayerId.Length != 0) {
+        PlayerId = other.PlayerId;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            PlayerId = input.ReadString();
+            break;
+          }
+          case 720: {
+            RpcId = input.ReadInt32();
+            break;
+          }
+          case 728: {
+            Error = input.ReadInt32();
+            break;
+          }
+          case 738: {
+            Message = input.ReadString();
             break;
           }
         }

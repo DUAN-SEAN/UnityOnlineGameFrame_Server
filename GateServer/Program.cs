@@ -2,31 +2,32 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using Crazy.Common;
 using GameServer.Configure;
 
-namespace GameServer
+namespace GateServer
 {
     class Program
     {
         static void Main(string[] args)
         {
-            GameServer gameServer = new GameServer();
-            if (!gameServer.Initialize<SampleGameServerGlobalConfig, GateServerServerContext>
-                (@"GameServerConfig.config", typeof(GateServerServerContext), new ProtobufPacker(), "GameServer"))
+             GateServer server = new GateServer();
+            if (!server.Initialize<SampleGameServerGlobalConfig, BDGameServerPlayerContext>
+                (@"GateGameServerConfig.config", typeof(BDGameServerPlayerContext), new ProtobufPacker(), "GateServer"))
             {
                 Log.Error("初始化服务器错误");
             }
             Log.Trace("服务器初始化成功！！！");
             while (true)
             {
-                GameServer.Instance.Update();
-                Thread.Sleep(1);
+                string cmd = Console.ReadLine();
+                if (cmd == "close-a")
+                {
+
+                }
+                Log.Debug(cmd);
             }
         }
     }
-
-   
 }

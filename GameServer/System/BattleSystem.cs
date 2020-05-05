@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Crazy.Common;
 using Crazy.NetSharp;
 using Crazy.ServerBase;
+using Google.Protobuf;
+using IMessage = Crazy.Common.IMessage;
 
 namespace GameServer.System
 {
@@ -115,7 +117,19 @@ namespace GameServer.System
             return true;
 
         }
+        public bool EnterClubBattle(string playerId, long roomId,GateServerServerContext gateContext)
+        {
+            if (!m_BattleEntityDic.TryGetValue(roomId, out var battleEntity))
+            {
+                battleEntity = new BattleEntity();
 
+                m_BattleEntityDic.Add(roomId, battleEntity);
+            }
+            battleEntity.GateContexts.Add(new Tuple<string, GateServerServerContext>(playerId,gateContext));
+            battleEntity.Players.Add(playerId);
+            return true;
+
+        }
         public void BroadcastBattleEntity(IMessage msg,long roomId)
         {
             if (!m_BattleEntityDic.TryGetValue(roomId, out var battleEntity))
@@ -123,8 +137,20 @@ namespace GameServer.System
                 Log.Info("Warning::BroadcastBattleEntity not find battleEntity Id = "+roomId);
                 return;
             }
-            GameServer.Instance.PlayerCtxManager.BroadcastLocalMessagebyPlayerId(new SystemSendNetMessage { Message = msg }, battleEntity.Players);
+            //GameServer.Instance.PlayerCtxManager.BroadcastLocalMessagebyPlayerId(new SystemSendNetMessage { Message = msg }, battleEntity.Players);
             
+            foreach (var battleEntityGateContext in battleEntity.GateContexts)
+            {
+               
+                battleEntityGateContext.Item2.Send(
+                    new S2G_WarppedServerMessage
+                    {
+                        TypeId = GameServer.Instance.OpcodeTypeDic.GetIdByType(msg.GetType()),
+                        MessageBody = ByteString.CopyFrom(ProtobufHelper.ToBytes(msg)),
+                        PlayerId = battleEntityGateContext.Item1,
+                        ServerId = GameServer.Instance.ServerId
+                    });
+            }
 
         }
         public Dictionary<long, BattleEntity> m_BattleEntityDic;
@@ -133,7 +159,7 @@ namespace GameServer.System
 
     public class BattleEntity
     {
-
+        public List<Tuple<string,GateServerServerContext>> GateContexts = new List<Tuple<string, GateServerServerContext>>();
 
         public string Roomer;
 

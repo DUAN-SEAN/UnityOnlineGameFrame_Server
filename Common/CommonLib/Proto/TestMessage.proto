@@ -26,6 +26,7 @@ message SyncPlayerEntityBattleMessage // ISyncBattleMessage
 	int64 RoomId = 101;
 	string PlayerId = 102;
 	int64 EntityId = 103;
+	int64 Time = 104;
 
 	Vector3 Pos = 2;
 	Vector3 Forward = 3;
@@ -86,6 +87,7 @@ message C2B_EnterClubBattleReqMessage // IRequest
 {
 	int32 RpcId = 90;
 	int64 RoomId = 1;
+	string PlayerId = 2;
 }
 
 message B2C_EnterClubBattleAckMessage // IResponse
@@ -125,46 +127,55 @@ message B2C_MissingPlayerEntityBattleMessage // IMessage
 message C2L_CreateRoomReqMessage // IRequest
 {
 	int32 RpcId = 90;
+	string PlayerId = 1;
 }
 message L2C_CreateRoomAckMessage // IResponse
 {
 	int32 RpcId = 90;
 	int32 Error = 91;
 	string Message = 92;
-
-	int64 RoomId = 1;
+	
+	string PlayerId = 1;
+	int64 RoomId = 2;
 
 }
 
 message C2L_JoinRoomReqMessage // IRequest
 {
 	int32 RpcId = 90;
-	int64 RoomId = 1;
+	
+	string PlayerId = 1;
+	int64 RoomId = 2;
 }
 message L2C_JoinRoomAckMessage // IResponse
 {
 	int32 RpcId = 90;
 	int32 Error = 91;
 	string Message = 92;
-
-	int64 RoomId = 1;
+	
+	string PlayerId = 1;
+	int64 RoomId = 2;
 }
 message C2L_GetRoomInfoReqMessage // IRequest
 {
 	int32 RpcId = 90;
-	int64 RoomId = 1;
+	string PlayerId = 1;
+	int64 RoomId = 2;
+	
 }
 message L2C_GetRoomInfoAckMessage // IResponse
 {
 	int32 RpcId = 90;
 	int32 Error = 91;
 	string Message = 92;
-
-	RoomInfoMessage RoomInfo = 1;
+	string PlayerId = 1;
+	RoomInfoMessage RoomInfo = 2;
 }
 message C2L_GetRoomListInfoReqMessage // IRequest
 {
 	int32 RpcId = 90;
+	
+	string PlayerId = 1;
 }
 message L2C_GetRoomListInfoAckMessage // IResponse
 {
@@ -182,4 +193,18 @@ message RoomInfoMessage
 	int32 RoomState = 4;
 	int32 RoomCapacity = 5;
 	repeated string PlayerIds = 6;
+}
+
+message C2G_AllocBattleServerMessageReq // IRequest
+{
+	int32 RpcId = 90;
+	string PlayerId = 1;
+	int64 RoomId = 2;
+}
+message C2G_AllocBattleServerMessageAck // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	string PlayerId = 1;
 }

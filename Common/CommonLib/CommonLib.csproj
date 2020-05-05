@@ -79,6 +79,8 @@
     <Compile Include="Message\MessageOpcode.cs" />
     <Compile Include="Message\RpcMessage.cs" />
     <Compile Include="Message\RpcMessageOpcode.cs" />
+    <Compile Include="Message\ServerInnerMessage.cs" />
+    <Compile Include="Message\ServerInnerMessageOpcode.cs" />
     <Compile Include="Message\TestMessage.cs" />
     <Compile Include="Message\TestMessageOpcode.cs" />
     <Compile Include="ObjectPool.cs" />
@@ -108,6 +110,7 @@
     <None Include="Base\Log\Configure\NLog.config" />
     <None Include="Configure\ConfigureSamples\XML\GameServerConfig.config" />
     <None Include="Configure\Configure\XML\GameServerConfig.config" />
+    <None Include="Proto\ServerInnerMessage.proto" />
     <None Include="Proto\BattleMessage.proto" />
     <None Include="Proto\TestMessage.proto" />
     <None Include="Proto\RpcMessage.proto" />

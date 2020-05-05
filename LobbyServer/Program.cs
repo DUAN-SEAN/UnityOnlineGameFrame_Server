@@ -7,26 +7,25 @@ using System.Threading.Tasks;
 using Crazy.Common;
 using GameServer.Configure;
 
-namespace GameServer
+namespace LobbyServer
 {
     class Program
     {
         static void Main(string[] args)
         {
-            GameServer gameServer = new GameServer();
-            if (!gameServer.Initialize<SampleGameServerGlobalConfig, GateServerServerContext>
-                (@"GameServerConfig.config", typeof(GateServerServerContext), new ProtobufPacker(), "GameServer"))
+            LobbyServer server = new LobbyServer();
+            if (!server.Initialize<SampleGameServerGlobalConfig, GateServerServerContext>
+                (@"LobbyGameServerConfig.config", typeof(GateServerServerContext), new ProtobufPacker(), "TankGameServer"))
             {
                 Log.Error("初始化服务器错误");
             }
             Log.Trace("服务器初始化成功！！！");
             while (true)
             {
-                GameServer.Instance.Update();
+                //Console.ReadKey();
+                LobbyServer.Instance.Update();
                 Thread.Sleep(1);
             }
         }
     }
-
-   
 }

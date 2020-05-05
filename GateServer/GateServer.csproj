@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4108629E-278B-41EF-A411-3E9FF4248756}</ProjectGuid>
+    <ProjectGuid>{0EABB0DB-C346-4B8A-8F65-F63DD5C406FC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>GameServer</RootNamespace>
-    <AssemblyName>GameServer</AssemblyName>
+    <RootNamespace>GateServer</RootNamespace>
+    <AssemblyName>GateServer</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,20 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Google.Protobuf, Version=3.7.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Google.Protobuf">
       <HintPath>..\packages\Google.Protobuf.3.7.0\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
-    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+    <Reference Include="NLog">
       <HintPath>..\packages\NLog.4.6.2\lib\net45\NLog.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.IO.Compression" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Transactions" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\VisualStudio2019\packages\System.Memory.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,35 +53,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GateServer.cs" />
     <Compile Include="Handler\BattleServerMessageHandler.cs" />
     <Compile Include="Handler\InnerServerHandlers.cs" />
+    <Compile Include="Handler\LobbyServerMessageHandler.cs" />
     <Compile Include="Handler\TestMessageHandler.cs" />
-    <Compile Include="PlayerContext\GateServerServerContext.cs" />
+    <Compile Include="PlayerContext\GameServerServerContext.cs" />
+    <Compile Include="PlayerContext\LobbyServerServerContext.cs" />
+    <Compile Include="PlayerContext\BDGameServerPlayerContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GameServer.cs" />
-    <Compile Include="PlayerContext\SampleGameServerPlayerContext.cs" />
-    <Compile Include="System\BattleSystem.cs" />
-    <Compile Include="System\LobbySystem.cs" />
-    <Compile Include="System\SystemLocalMessage\Battle\BattleSystemLocalMessageIDDef.cs" />
-    <Compile Include="System\SystemLocalMessage\Battle\BattleSystemMessage.cs" />
-    <Compile Include="System\SystemLocalMessage\Lobby\LobbySystemMessage.cs" />
-    <Compile Include="System\SystemLocalMessage\Lobby\LobbySystemLocalMessageIDDef.cs" />
-    <Compile Include="System\UserSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Configures\LobbyGameServerConfig.config" />
-    <None Include="Configures\GateGameServerConfig.config" />
-    <None Include="Configures\GameServerConfig.config" />
-    <None Include="packages.config" />
+    <None Include="Configure\GateGameServerConfig.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\CommonLib\CommonLib.csproj">
       <Project>{0f3ecc0f-e8f4-434e-aaf9-95a912f2f565}</Project>
       <Name>CommonLib</Name>
     </ProjectReference>
-    <ProjectReference Include="ServerBase\ServerBase.csproj">
+    <ProjectReference Include="..\GameServer\ServerBase\ServerBase.csproj">
       <Project>{c62bc39f-6932-45f2-a626-4faf7f836e6f}</Project>
       <Name>ServerBase</Name>
     </ProjectReference>

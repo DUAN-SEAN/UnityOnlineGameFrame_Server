@@ -24,7 +24,7 @@ namespace GameServer.Handler
         {
             var response = new B2C_EnterClubBattleAckMessage();
             var flag = GameServer.Instance.GetSystem<BattleSystem>()
-                .EnterClubBattle((playerContext as SampleGameServerPlayerContext).ContextStringName, message.RoomId);
+                .EnterClubBattle(message.PlayerId, message.RoomId,playerContext as GateServerServerContext);
             if (flag) response.RoomId = message.RoomId;
             else response.RoomId = -1;
             

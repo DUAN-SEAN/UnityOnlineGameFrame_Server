@@ -1,0 +1,50 @@
+syntax = "proto3";
+package Crazy.Common;
+
+
+message G2S_TestServerMessage // IMessage
+{
+	int32 RpcId = 90;
+	int32 ServerId = 1;
+}
+
+//抓住内部一个Server
+message G2S_CatchServerMessage // IRequest
+{
+	int32 RpcId = 90;
+	int32 ServerId = 1;
+}
+message S2G_CatchServerMessage // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int32 ServerId = 1;
+}
+
+message S2G_WarppedServerMessage // IMessage
+{
+	int32 RpcId = 90;
+	int32 ServerId = 1;
+	string PlayerId = 2;
+	bytes MessageBody = 3;
+	uint32 TypeId = 4;
+}
+
+//抓住内部一个Server
+message G2L_GetRoomPlayersServerMessageReq // IRequest
+{
+	int32 RpcId = 90;
+	int32 ServerId = 1;
+	
+	int64 RoomId= 2;
+}
+message L2G_GetRoomPlayersServerMessageACK // IResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+	int32 ServerId = 1;
+	repeated string PlayerIds = 2;
+	string RoomerId= 3;
+}

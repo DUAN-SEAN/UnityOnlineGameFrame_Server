@@ -200,7 +200,7 @@ namespace Crazy.NetSharp
             var tcpClient = new TcpClient();
 
             // 进行连接
-            // 因为外面调用的时候，采用了同步方法，所以为了避免出现死锁问题，不用async方法 2016/3/17 ouyangxiong
+            // 因为外面调用的时候，采用了同步方法，所以为了避免出现死锁问题，不用async方法
             tcpClient.Connect(address, port);
 
             // 用得到的socket对象构造client
@@ -208,7 +208,7 @@ namespace Crazy.NetSharp
 
             // 启动为client服务的task
             // ClientWorkProc的执行线程，不能与SynchronizationContext的线程在同一个线程中，所以此处用Task.Run来执行，让系统线程池来执行
-            //Task.Run(() => { ClientWorkProc(client, clientEventHandler, bufferSize).Wait(); }); // todo:ouyang test
+            //Task.Run(() => { ClientWorkProc(client, clientEventHandler, bufferSize).Wait(); }); 
             Task.Factory.StartNew(() => { ClientWorkProc(client, clientEventHandler, bufferSize).Wait(); }, CancellationToken.None, TaskCreationOptions.LongRunning, TaskSchedulerHelper.TaskSchedulers[priority]);
 
             if (client.Closed)

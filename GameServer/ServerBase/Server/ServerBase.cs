@@ -11,6 +11,10 @@ using System.Net;
 
 namespace Crazy.ServerBase
 {
+    public enum ServerType
+    {
+        Gate,Game,Lobby
+    }
     public partial class ServerBase:IServiceEventHandler //提供Service使用事件
     {
         public ServerBase()
@@ -64,12 +68,6 @@ namespace Crazy.ServerBase
                 Log.Error("ServerBase::Initialization started timer manager failed");
                 return false;
             }
-
-            //if (!InitlizeObjectFactory())
-            //{
-            //    Log.Error("对象池初始化失败");
-            //    return false;
-            //}
 
             //初始化网络
             if (!InitializeNetWork())
@@ -265,7 +263,14 @@ namespace Crazy.ServerBase
             }
             baseSystem.PostLocalMessage(msg);
         }
-
+        public void Update()
+        {
+            var systems = m_SystemDic.Values;
+            foreach (var system in systems)
+            {
+                system.Update();
+            }
+        }
         protected readonly Dictionary<Type, BaseSystem> m_SystemDic = new Dictionary<Type, BaseSystem>();
 
 
@@ -305,7 +310,7 @@ namespace Crazy.ServerBase
         /// <summary>
         /// 协议字典
         /// </summary>
-        private OpcodeTypeDictionary OpcodeTypeDic;
+        public OpcodeTypeDictionary OpcodeTypeDic;
         /// <summary>
         /// 获取当前服务器的玩家上下文管理对象。
         /// </summary>

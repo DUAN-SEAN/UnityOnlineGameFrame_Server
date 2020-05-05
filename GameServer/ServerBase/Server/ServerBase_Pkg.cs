@@ -69,6 +69,7 @@ namespace Crazy.ServerBase
                     true, true))
                 {
                     // 先序列化协议包
+
                     m_messagePraser.SerializeTo(packageObj, stream);
                     // 包长度 = 协议内容长度 + 包头长度
                     pkgLen = (ushort)(stream.Position + headLen);
